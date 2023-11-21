@@ -514,6 +514,23 @@
 
 <script>
   $(document).ready(function(){
-   oTable.fnFilter($(this).val());
+   $("#DataTables_Table_0").dataTable({
+                "sPaginationType": "full_numbers",
+                "bFilter":true,
+                "sPageFirst": false,
+                "sPageLast": false,
+                "oLanguage": {
+                "oPaginate": {
+                    "sPrevious": "<< previous",
+                    "sNext" : "Next >>",
+                    "sFirst": "<<",
+                    "sLast": ">>"
+                    }
+                },
+            "bJQueryUI": false,
+            "bLengthChange": false,
+            "bInfo":false,
+            "bSortable":true
+        });    
 });
 </script>
