@@ -514,6 +514,9 @@
 
 <script>
   $(document).ready(function(){
-  oTable.fnFilter($(this).val());
+  var oTable = $('#myTable').DataTable();    
+$('#myInputTextField').keyup(function(){
+   oTable.search( $(this).val() ).draw();
+})
 });
 </script>
