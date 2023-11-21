@@ -39,6 +39,9 @@
       <script src="assets/js/html5shiv.min.js"></script>
       <script src="assets/js/respond.min.js"></script>
     <![endif]-->
+    <style>
+      .dataTables_filter, .dataTables_info { display: inline; }
+    </style>
   </head>
 
   <body>
@@ -514,23 +517,6 @@
 
 <script>
   $(document).ready(function(){
-   $(".table").dataTable({
-                "sPaginationType": "full_numbers",
-                "bFilter":true,
-                "sPageFirst": false,
-                "sPageLast": false,
-                "oLanguage": {
-                "oPaginate": {
-                    "sPrevious": "<< previous",
-                    "sNext" : "Next >>",
-                    "sFirst": "<<",
-                    "sLast": ">>"
-                    }
-                },
-            "bJQueryUI": false,
-            "bLengthChange": false,
-            "bInfo":false,
-            "bSortable":true
-        });    
+   
 });
 </script>
