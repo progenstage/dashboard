@@ -330,7 +330,7 @@
               <div class="table-responsive">
                 <table
                   class="table table-border table-striped custom-table datatable mb-0"
-                id="table">
+                >
                   <thead>
                     <tr>
                       <th>Nombre</th>
@@ -514,9 +514,6 @@
 
 <script>
   $(document).ready(function(){
-  var oTable = $('#table').DataTable();    
-$('#myInputTextField').keyup(function(){
-   oTable.search( $(this).val() ).draw();
-})
+   oTable.fnFilter($(this).val());
 });
 </script>
