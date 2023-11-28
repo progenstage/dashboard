@@ -5006,8 +5006,14 @@ i.fa.fa-circle.bad::before {
 
 .table-buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   gap: 20px;
+  margin-bottom: 20px;
+}
+
+.table-buttons a {
+  flex: 1;
 }
 
 .price-details {
@@ -5023,6 +5029,7 @@ i.fa.fa-circle.bad::before {
 .price-details p {
   color: #007a9a;
   font-weight: bold;
+  margin: 0;
 }
 
 .price-details p span {
@@ -5036,4 +5043,26 @@ i.fa.fa-circle.bad::before {
 .detail-link a {
   text-decoration: underline;
   color: #007a9a;
+}
+
+.graph-tabs {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.graph-tabs a {
+  border-right: 1px solid #007a9a;
+  padding-right: 10px;
+}
+
+.last-child {
+  border-right: 0 !important;
+}
+
+.patient-info {
+  max-height: 430px;
+  overflow-y: scroll;
 }
