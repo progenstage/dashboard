@@ -391,11 +391,11 @@
                   <thead>
                     <tr>
                       <th>Nombre</th>
-                      <th>Fecha</th>
-                      <th>Inicio/Actual (IMC)</th>
+                      <th>Inicio / Proxima visita</th>
                       <th>Peso Ideal</th>
-                      <th>Visita</th>
-                      <th>Ventas</th>
+                      <th>Fase</th>
+                      <th>Inicio/Actual (IMC)</th>
+                      <th>GDPR</th>
                       <th>Mostrar ocultar</th>
                       <th class="text-right">Acción</th>
                     </tr>
@@ -403,20 +403,34 @@
                   <tbody>
                     <tr>
                       <td>
-                        <img
-                          width="28"
-                          height="28"
-                          src="assets/img/user.jpg"
-                          class="rounded-circle m-r-5"
-                          alt=""
-                        />
-                        Jennifer Robinson
+                        <div>
+                          <img
+                            width="28"
+                            height="28"
+                            src="assets/img/user.jpg"
+                            class="rounded-circle m-r-5"
+                            alt=""
+                          />
+                          <b style="font-weight: bold; display: inline-block"
+                            >Jennifer Robinson</b
+                          >
+                          <span>(35 Anos)</span>
+                        </div>
+
+                        <p class="text-center">+34 610 405 405</p>
                       </td>
-                      <td>1 Nov 23</td>
-                      <td>120, 0kg / 33.24 IMC</td>
-                      <td>90.88 KG</td>
-                      <td>18 Nov</td>
-                      <td>50.12 Mes</td>
+                      <td>
+                        2 Nov 23 - <b style="font-weight: bold">27 Nov 23</b>
+                      </td>
+                      <td>99 kG</td>
+                      <td>Fase 1</td>
+                      <td>120,1 / 112,3 KG (28.1)</td>
+                      <td
+                        class="text-center"
+                        style="color: #6fba29; font-weight: bold"
+                      >
+                        V
+                      </td>
                       <td class="text-center">
                         <button
                           class="btn btn-primary show-info"
@@ -452,19 +466,62 @@
                       </td>
                     </tr>
                     <tr class="additional-info" id="additional-info-1">
-                      <td colspan="2">
-                        <p>Additional information for Row 1</p>
+                      <td colspan="2" class="patient-info-container">
+                        <div class="patient-info">
+                          <p style="font-weight: bold">
+                            Madrid, hellomy@gmail.com
+                          </p>
+                          <p style="font-weight: bold">
+                            Fecha nacemientento:
+                            <span style="font-weight: normal">12 Nov 1984</span>
+                          </p>
+                          <p style="font-weight: bold">
+                            Ultima visita:
+                            <span style="font-weight: normal">20-11-2023</span>
+                          </p>
+                          <p style="font-weight: bold">Motivo de Consulta</p>
+                          <li style="margin-bottom: 10px">
+                            El paciente entre con problemas mentales y de
+                            estomacho
+                          </li>
+                          <ul>
+                            <p style="font-weight: bold">Datos de Salud</p>
+                            <li>Objectivo: Bajar Peso / el paciente sufre</li>
+                            <li>Fumador Si / Alcohol Moderado</li>
+                            <li>
+                              Funcion instentinal: diarea, a veces si, a veces
+                              no
+                            </li>
+                          </ul>
+                          <ul>
+                            <p style="font-weight: bold">
+                              Historia alimentaria
+                            </p>
+                            <li>Alergias: Gluten, lactose.</li>
+                            <li>Introlerancias alimentarias: Lactose</li>
+                            <li>Deficiencias nutricionales: Hierro, Calcio</li>
+                            <li>Hydration (Agua): 1 litro / Dia</li>
+                          </ul>
+                        </div>
+                        <div class="price-details">
+                          <div class="prices">
+                            <p>Ventas ultimo mes: <span> € 512,10</span></p>
+                            <p>Ventas Totales: <span>€ 153,24</span></p>
+                          </div>
+                          <div class="detail-link">
+                            <a href="#">Detalles</a>
+                          </div>
+                        </div>
                       </td>
 
                       <td colspan="2">
-                        <a class="btn btn-primary">
-                          Update Manually
-                        </a>
-                        <a class="btn btn-primary">
-                          New Prescription
-                        </a>
+                        <div class="table-buttons">
+                          <a class="btn btn-primary"> Ficha</a>
+                          <a class="btn btn-primary"> Anadir Consulta </a>
+                          <a class="btn btn-primary"> Perscipcion Medico </a>
+                        </div>
                       </td>
-                      <td colspan="4">
+                      <td colspan="4" class="text-right">
                         <div class="col-md-10 custom-linear-graph">
                           <div
                             class="h-full bg-[#f5f6fa] linear-graph-container"
@@ -512,20 +569,34 @@
                     </tr>
                     <tr>
                       <td>
-                        <img
-                          width="28"
-                          height="28"
-                          src="assets/img/user.jpg"
-                          class="rounded-circle m-r-5"
-                          alt=""
-                        />
-                        Jennifer Robinson
+                        <div>
+                          <img
+                            width="28"
+                            height="28"
+                            src="assets/img/user.jpg"
+                            class="rounded-circle m-r-5"
+                            alt=""
+                          />
+                          <b style="font-weight: bold; display: inline-block"
+                            >Jennifer Robinson</b
+                          >
+                          <span>(35 Anos)</span>
+                        </div>
+
+                        <p class="text-center">+34 610 405 405</p>
                       </td>
-                      <td>1 Nov 23</td>
-                      <td>120, 0kg / 33.24 IMC</td>
-                      <td>90.88 KG</td>
-                      <td>18 Nov</td>
-                      <td>50.12 Mes</td>
+                      <td>
+                        2 Nov 23 - <b style="font-weight: bold">27 Nov 23</b>
+                      </td>
+                      <td>99 kG</td>
+                      <td>Fase 1</td>
+                      <td>120,1 / 112,3 KG (28.1)</td>
+                      <td
+                        class="text-center"
+                        style="color: #6fba29; font-weight: bold"
+                      >
+                        V
+                      </td>
                       <td class="text-center">
                         <button
                           class="btn btn-primary show-info"
@@ -561,18 +632,62 @@
                       </td>
                     </tr>
                     <tr class="additional-info" id="additional-info-2">
-                      <td colspan="2">
-                        <p>Additional information for Row 2</p>
+                      <td colspan="2" class="patient-info-container">
+                        <div class="patient-info">
+                          <p style="font-weight: bold">
+                            Madrid, hellomy@gmail.com
+                          </p>
+                          <p style="font-weight: bold">
+                            Fecha nacemientento:
+                            <span style="font-weight: normal">12 Nov 1984</span>
+                          </p>
+                          <p style="font-weight: bold">
+                            Ultima visita:
+                            <span style="font-weight: normal">20-11-2023</span>
+                          </p>
+                          <p style="font-weight: bold">Motivo de Consulta</p>
+                          <li style="margin-bottom: 10px">
+                            El paciente entre con problemas mentales y de
+                            estomacho
+                          </li>
+                          <ul>
+                            <p style="font-weight: bold">Datos de Salud</p>
+                            <li>Objectivo: Bajar Peso / el paciente sufre</li>
+                            <li>Fumador Si / Alcohol Moderado</li>
+                            <li>
+                              Funcion instentinal: diarea, a veces si, a veces
+                              no
+                            </li>
+                          </ul>
+                          <ul>
+                            <p style="font-weight: bold">
+                              Historia alimentaria
+                            </p>
+                            <li>Alergias: Gluten, lactose.</li>
+                            <li>Introlerancias alimentarias: Lactose</li>
+                            <li>Deficiencias nutricionales: Hierro, Calcio</li>
+                            <li>Hydration (Agua): 1 litro / Dia</li>
+                          </ul>
+                        </div>
+                        <div class="price-details">
+                          <div class="prices">
+                            <p>Ventas ultimo mes: <span> € 512,10</span></p>
+                            <p>Ventas Totales: <span>€ 153,24</span></p>
+                          </div>
+                          <div class="detail-link">
+                            <a href="#">Detalles</a>
+                          </div>
+                        </div>
                       </td>
+
                       <td colspan="2">
-                        <a class="btn btn-primary">
-                          Update Manually
-                        </a>
-                        <a class="btn btn-primary">
-                          New Prescription
-                        </a>
+                        <div class="table-buttons">
+                          <a class="btn btn-primary"> Ficha</a>
+                          <a class="btn btn-primary"> Anadir Consulta </a>
+                          <a class="btn btn-primary"> Perscipcion Medico </a>
+                        </div>
                       </td>
-                      <td colspan="4">
+                      <td colspan="4" class="text-right">
                         <div class="col-md-10 custom-linear-graph">
                           <div
                             class="h-full bg-[#f5f6fa] linear-graph-container"
@@ -595,7 +710,10 @@
                                   </div>
                                 </div>
 
-                                <canvas id="line-chart-2" class="w-full"></canvas>
+                                <canvas
+                                  id="line-chart-2"
+                                  class="w-full"
+                                ></canvas>
                                 <div class="canvas-content">
                                   <div class="good">
                                     <i
@@ -620,20 +738,34 @@
                     </tr>
                     <tr>
                       <td>
-                        <img
-                          width="28"
-                          height="28"
-                          src="assets/img/user.jpg"
-                          class="rounded-circle m-r-5"
-                          alt=""
-                        />
-                        Jennifer Robinson
+                        <div>
+                          <img
+                            width="28"
+                            height="28"
+                            src="assets/img/user.jpg"
+                            class="rounded-circle m-r-5"
+                            alt=""
+                          />
+                          <b style="font-weight: bold; display: inline-block"
+                            >Jennifer Robinson</b
+                          >
+                          <span>(35 Anos)</span>
+                        </div>
+
+                        <p class="text-center">+34 610 405 405</p>
                       </td>
-                      <td>1 Nov 23</td>
-                      <td>120, 0kg / 33.24 IMC</td>
-                      <td>90.88 KG</td>
-                      <td>18 Nov</td>
-                      <td>50.12 Mes</td>
+                      <td>
+                        2 Nov 23 - <b style="font-weight: bold">27 Nov 23</b>
+                      </td>
+                      <td>99 kG</td>
+                      <td>Fase 1</td>
+                      <td>120,1 / 112,3 KG (28.1)</td>
+                      <td
+                        class="text-center"
+                        style="color: #6fba29; font-weight: bold"
+                      >
+                        V
+                      </td>
                       <td class="text-center">
                         <button
                           class="btn btn-primary show-info"
@@ -669,18 +801,62 @@
                       </td>
                     </tr>
                     <tr class="additional-info" id="additional-info-3">
-                      <td colspan="2">
-                        <p>Additional information for Row 3</p>
+                      <td colspan="2" class="patient-info-container">
+                        <div class="patient-info">
+                          <p style="font-weight: bold">
+                            Madrid, hellomy@gmail.com
+                          </p>
+                          <p style="font-weight: bold">
+                            Fecha nacemientento:
+                            <span style="font-weight: normal">12 Nov 1984</span>
+                          </p>
+                          <p style="font-weight: bold">
+                            Ultima visita:
+                            <span style="font-weight: normal">20-11-2023</span>
+                          </p>
+                          <p style="font-weight: bold">Motivo de Consulta</p>
+                          <li style="margin-bottom: 10px">
+                            El paciente entre con problemas mentales y de
+                            estomacho
+                          </li>
+                          <ul>
+                            <p style="font-weight: bold">Datos de Salud</p>
+                            <li>Objectivo: Bajar Peso / el paciente sufre</li>
+                            <li>Fumador Si / Alcohol Moderado</li>
+                            <li>
+                              Funcion instentinal: diarea, a veces si, a veces
+                              no
+                            </li>
+                          </ul>
+                          <ul>
+                            <p style="font-weight: bold">
+                              Historia alimentaria
+                            </p>
+                            <li>Alergias: Gluten, lactose.</li>
+                            <li>Introlerancias alimentarias: Lactose</li>
+                            <li>Deficiencias nutricionales: Hierro, Calcio</li>
+                            <li>Hydration (Agua): 1 litro / Dia</li>
+                          </ul>
+                        </div>
+                        <div class="price-details">
+                          <div class="prices">
+                            <p>Ventas ultimo mes: <span> € 512,10</span></p>
+                            <p>Ventas Totales: <span>€ 153,24</span></p>
+                          </div>
+                          <div class="detail-link">
+                            <a href="#">Detalles</a>
+                          </div>
+                        </div>
                       </td>
+
                       <td colspan="2">
-                        <a class="btn btn-primary">
-                          Update Manually
-                        </a>
-                        <a class="btn btn-primary">
-                          New Prescription
-                        </a>
+                        <div class="table-buttons">
+                          <a class="btn btn-primary"> Ficha</a>
+                          <a class="btn btn-primary"> Anadir Consulta </a>
+                          <a class="btn btn-primary"> Perscipcion Medico </a>
+                        </div>
                       </td>
-                      <td colspan="4">
+                      <td colspan="4" class="text-right">
                         <div class="col-md-10 custom-linear-graph">
                           <div
                             class="h-full bg-[#f5f6fa] linear-graph-container"
