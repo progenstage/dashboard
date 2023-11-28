@@ -4946,7 +4946,7 @@ blockquote p {
   }
 }
 
-.btn-primary{
+.btn-primary {
   color: #fff !important;
 }
 
@@ -4996,10 +4996,44 @@ blockquote p {
   line-height: normal;
 }
 
-i.fa.fa-circle.good::before{
+i.fa.fa-circle.good::before {
   color: #6fba29;
 }
 
-i.fa.fa-circle.bad::before{
+i.fa.fa-circle.bad::before {
   color: #f8cc53;
+}
+
+.table-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.price-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+  background: #f6f6f6;
+  border: 1px solid #007a9a;
+}
+
+.price-details p {
+  color: #007a9a;
+  font-weight: bold;
+}
+
+.price-details p span {
+  font-weight: normal;
+}
+
+.detail-link {
+  align-self: flex-end;
+}
+
+.detail-link a {
+  text-decoration: underline;
+  color: #007a9a;
 }
