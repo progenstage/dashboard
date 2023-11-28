@@ -5066,3 +5066,17 @@ i.fa.fa-circle.bad::before {
   max-height: 430px;
   overflow-y: scroll;
 }
+
+.modal-dialog {
+  max-width: 80%;
+}
+
+.modal-title {
+  margin: 20px 0;
+  text-align: center;
+  color: #007a9a;
+}
+
+.extended-button{
+  width: 100%;
+}
