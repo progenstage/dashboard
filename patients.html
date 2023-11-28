@@ -518,7 +518,12 @@
                         <div class="col-md-12 custom-linear-graph">
                           <div class="table-buttons">
                             <a class="btn btn-primary"> Ficha</a>
-                            <a class="btn btn-primary"> Anadir Consulta </a>
+                            <a
+                              class="btn btn-primary"
+                              data-toggle="modal"
+                              data-target="#consultaModal"
+                              >Anadir Consulta</a
+                            >
                             <a class="btn btn-primary"> Perscipcion Medico </a>
                           </div>
                           <div
@@ -542,10 +547,7 @@
                                   </div>
                                 </div>
 
-                                <canvas
-                                  id="line-chart"
-                                  class="w-full"
-                                ></canvas>
+                                <canvas id="line-chart" class="w-full"></canvas>
                                 <div class="canvas-content">
                                   <div class="good">
                                     <i
@@ -695,7 +697,12 @@
                         <div class="col-md-12 custom-linear-graph">
                           <div class="table-buttons">
                             <a class="btn btn-primary"> Ficha</a>
-                            <a class="btn btn-primary"> Anadir Consulta </a>
+                            <a
+                              class="btn btn-primary"
+                              data-toggle="modal"
+                              data-target="#consultaModal"
+                              >Anadir Consulta</a
+                            >
                             <a class="btn btn-primary"> Perscipcion Medico </a>
                           </div>
                           <div
@@ -872,7 +879,12 @@
                         <div class="col-md-12 custom-linear-graph">
                           <div class="table-buttons">
                             <a class="btn btn-primary"> Ficha</a>
-                            <a class="btn btn-primary"> Anadir Consulta </a>
+                            <a
+                              class="btn btn-primary"
+                              data-toggle="modal"
+                              data-target="#consultaModal"
+                              >Anadir Consulta</a
+                            >
                             <a class="btn btn-primary"> Perscipcion Medico </a>
                           </div>
                           <div
@@ -957,6 +969,379 @@
           </div>
         </div>
       </div>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="consultaModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="consultaModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <h5 class="modal-title" id="consultaModalLabel">
+                Consulta Modal Header
+              </h5> -->
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="content">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h1 class="modal-title">Anadir Consulta</h1>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-10 offset-lg-1">
+                    <form>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <label>Fecha de las mediciones</label>
+                            <div class="cal-icon">
+                              <input
+                                type="text"
+                                class="form-control datetimepicker"
+                                placeholder="27/11/2023"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label>Marca de tiempo</label>
+                            <div class="time-icon">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="datetimepicker4"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-8">
+                          <h4 class="page-title">Datos antropometricos</h4>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label
+                              >Peso <span class="text-danger">*</span></label
+                            >
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="kg"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Alutra</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="cm"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                          <div class-form-group="">
+                            <label
+                              >Perimetro de la cadera
+                              <span class="text-danger">*</span></label
+                            >
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="cm"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label
+                              >Perimetro de la cadera
+                              <span class="text-danger">*</span></label
+                            >
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="cm"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <label
+                              >Comentario
+                              <span class="text-danger">*</span></label
+                            >
+                            <textarea
+                              class="form-control"
+                              rows="5"
+                              placeholder="Comentario"
+                            ></textarea>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <!-- Button to toggle content 1 -->
+                          <button
+                            class="btn btn-primary extended-button"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#content1"
+                            aria-expanded="false"
+                            aria-controls="content1"
+                          >
+                            Datos analiticos
+                          </button>
+                        </div>
+                        <div class="col-sm-6">
+                          <!-- Button to toggle content 2 -->
+                          <button
+                            class="btn btn-primary extended-button"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#content2"
+                            aria-expanded="false"
+                            aria-controls="content2"
+                          >
+                            Composicion corporal
+                          </button>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <!-- Collapsible content 1 -->
+                        <div class="collapse col-sm-12" id="content1">
+                          <div class="row">
+                            <div class="col-sm-12 mt-3">
+                              <h4 class="page-title">Datos analiticos</h4>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label
+                                  >Colesterol HDL
+                                  <span class="text-danger">*</span></label
+                                >
+                                <input
+                                  class="form-control"
+                                  type="text"
+                                  placeholder="mg/dL"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label
+                                  >Colesterol LDL
+                                  <span class="text-danger">*</span></label
+                                >
+                                <input
+                                  class="form-control"
+                                  type="text"
+                                  placeholder="mg/dL"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label
+                                  >Colesterol total
+                                  <span class="text-danger">*</span></label
+                                >
+                                <input
+                                  class="form-control"
+                                  type="text"
+                                  placeholder="mg/dL"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label
+                                  >Presion arterial diastolica<span
+                                    class="text-danger"
+                                    >*</span
+                                  ></label
+                                >
+                                <input
+                                  class="form-control"
+                                  type="text"
+                                  placeholder="mmHg"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label
+                                  >Presion arterial sistolica<span
+                                    class="text-danger"
+                                    >*</span
+                                  ></label
+                                >
+                                <input
+                                  class="form-control"
+                                  type="text"
+                                  placeholder="mmHg"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label
+                                  >Triliceridos<span class="text-danger"
+                                    >*</span
+                                  ></label
+                                >
+                                <input
+                                  class="form-control"
+                                  type="text"
+                                  placeholder="mg/dL"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <!-- Collapsible content 2 -->
+                        <div class="collapse col-sm-12" id="content2">
+                          <div class="row">
+                            <div class="col-sm-12 mt-3">
+                              <h4 class="page-title">Composicion corporal</h4>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label
+                                  >Masa grasa
+                                  <span class="text-danger">*</span></label
+                                >
+                                <input
+                                  class="form-control"
+                                  type="text"
+                                  placeholder="kg"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label
+                                  >Masa muscular
+                                  <span class="text-danger">*</span></label
+                                >
+                                <input
+                                  class="form-control"
+                                  type="text"
+                                  placeholder="kg"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label
+                                  >Porcentaje de masa grasa
+                                  <span class="text-danger">*</span></label
+                                >
+                                <input
+                                  class="form-control"
+                                  type="text"
+                                  placeholder="%"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label
+                                  >Porcentaje de masa muscular
+                                  <span class="text-danger">*</span></label
+                                >
+                                <input
+                                  class="form-control"
+                                  type="text"
+                                  placeholder="%"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- <div class="m-t-20 text-center">
+                        <button class="btn btn-primary submit-btn">Save</button>
+                      </div> -->
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Button to toggle content 1 -->
+              <!-- <button
+                class="btn btn-primary"
+                type="button"
+                data-toggle="collapse"
+                data-target="#content1"
+                aria-expanded="false"
+                aria-controls="content1"
+              >
+                Toggle Content 1
+              </button> -->
+
+              <!-- Collapsible content 1 -->
+              <!-- <div class="collapse" id="content1">
+                <div class="card card-body">
+                  <p>This is the content for button 1.</p>
+                </div>
+              </div> -->
+
+              <!-- Button to toggle content 2 -->
+              <!-- <button
+                class="btn btn-primary"
+                type="button"
+                data-toggle="collapse"
+                data-target="#content2"
+                aria-expanded="false"
+                aria-controls="content2"
+              >
+                Toggle Content 2
+              </button> -->
+
+              <!-- Collapsible content 2 -->
+              <!-- <div class="collapse" id="content2">
+                <div class="card card-body">
+                  <p>This is the content for button 2.</p>
+                </div>
+              </div> -->
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="sidebar-overlay" data-reff=""></div>
     <script src="assets/js/jquery-3.2.1.min.js"></script>
@@ -977,15 +1362,22 @@
 </html>
 
 <script>
-  $(document).ready(function () {});
-</script>
-
-<script>
   $(document).ready(function () {
     // Toggle additional info on button click
     $(".show-info").click(function () {
       var target = $(this).data("target");
       $(target).toggle();
+    });
+  });
+</script>
+
+<script>
+  $(function () {
+    $("#datetimepicker3").datetimepicker({
+      format: "LT",
+    });
+    $("#datetimepicker4").datetimepicker({
+      format: "LT",
     });
   });
 </script>
