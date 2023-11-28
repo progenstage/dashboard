@@ -5079,4 +5079,13 @@ i.fa.fa-circle.bad::before {
 
 .extended-button{
   width: 100%;
+  color: #007a9a !important;
+  background: transparent;
+  border: 1px solid #007a9a;
+}
+
+.extended-button:hover,
+.extended-button:focus{
+  color: #fff !important;
+
 }
