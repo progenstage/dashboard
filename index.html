@@ -341,8 +341,8 @@
                   <div class="chart-title">
                     <h4>Total de Pacientes</h4>
                     <span class="float-right"
-                      ><i class="fa fa-caret-up" aria-hidden="true"></i> 15%
-                      Más que el Mes Pasado</span
+                      ><i class="fa fa-caret-up" aria-hidden="true"></i> 15% Más
+                      que el Mes Pasado</span
                     >
                   </div>
                   <canvas id="linegraph"></canvas>
@@ -548,9 +548,9 @@
             <div class="col-12 col-md-6 col-lg-8 col-xl-8">
               <div class="card">
                 <div class="card-header">
-                  <h4 class="card-title d-inline-block">Próximas Citas</h4>
+                  <h4 class="card-title d-inline-block">Comunicaciones</h4>
                   <a
-                    href="appointments.html"
+                    href="#"
                     class="btn btn-primary float-right"
                     >Ver todas</a
                   >
@@ -578,7 +578,7 @@
                             </h2>
                           </td>
                           <td>
-                            <h5 class="time-title p-0">Cita con</h5>
+                            <h5 class="time-title p-0">Chatea con</h5>
                             <p>Dr. Cristina Groves</p>
                           </td>
                           <td>
@@ -587,9 +587,11 @@
                           </td>
                           <td class="text-right">
                             <a
-                              href="appointments.html"
+                              href="#"
                               class="btn btn-outline-primary take-btn"
-                              >Tomar</a
+                              data-toggle="modal"
+                              data-target="#chatModal"
+                              >Respuesta rápida</a
                             >
                           </td>
                         </tr>
@@ -604,7 +606,7 @@
                             </h2>
                           </td>
                           <td>
-                            <h5 class="time-title p-0">Cita con</h5>
+                            <h5 class="time-title p-0">Chatea con</h5>
                             <p>Dr. Cristina Groves</p>
                           </td>
                           <td>
@@ -613,9 +615,11 @@
                           </td>
                           <td class="text-right">
                             <a
-                              href="appointments.html"
+                              href="#"
                               class="btn btn-outline-primary take-btn"
-                              >Tomar</a
+                              data-toggle="modal"
+                              data-target="#chatModal"
+                              >Respuesta rápida</a
                             >
                           </td>
                         </tr>
@@ -630,7 +634,7 @@
                             </h2>
                           </td>
                           <td>
-                            <h5 class="time-title p-0">Cita con</h5>
+                            <h5 class="time-title p-0">Chatea con</h5>
                             <p>Dr. Cristina Groves</p>
                           </td>
                           <td>
@@ -639,9 +643,11 @@
                           </td>
                           <td class="text-right">
                             <a
-                              href="appointments.html"
+                              href="#"
                               class="btn btn-outline-primary take-btn"
-                              >Tomar</a
+                              data-toggle="modal"
+                              data-target="#chatModal"
+                              >Respuesta rápida</a
                             >
                           </td>
                         </tr>
@@ -650,13 +656,12 @@
                             <a class="avatar" href="profile.html">B</a>
                             <h2>
                               <a href="profile.html"
-                                >Bernardo Galaviz
-                                <span>Malaga, España</span></a
+                                >Bernardo Galaviz <span>Malaga, España</span></a
                               >
                             </h2>
                           </td>
                           <td>
-                            <h5 class="time-title p-0">Cita con</h5>
+                            <h5 class="time-title p-0">Chatea con</h5>
                             <p>Dr. Cristina Groves</p>
                           </td>
                           <td>
@@ -665,9 +670,11 @@
                           </td>
                           <td class="text-right">
                             <a
-                              href="appointments.html"
+                              href="#"
                               class="btn btn-outline-primary take-btn"
-                              >Tomar</a
+                              data-toggle="modal"
+                              data-target="#chatModal"
+                              >Respuesta rápida</a
                             >
                           </td>
                         </tr>
@@ -676,13 +683,12 @@
                             <a class="avatar" href="profile.html">B</a>
                             <h2>
                               <a href="profile.html"
-                                >Bernardo Galaviz
-                                <span>Malaga, España</span></a
+                                >Bernardo Galaviz <span>Malaga, España</span></a
                               >
                             </h2>
                           </td>
                           <td>
-                            <h5 class="time-title p-0">Cita con</h5>
+                            <h5 class="time-title p-0">Chatea con</h5>
                             <p>Dr. Cristina Groves</p>
                           </td>
                           <td>
@@ -691,9 +697,11 @@
                           </td>
                           <td class="text-right">
                             <a
-                              href="appointments.html"
+                              href="#"
                               class="btn btn-outline-primary take-btn"
-                              >Tomar</a
+                              data-toggle="modal"
+                              data-target="#chatModal"
+                              >Respuesta rápida</a
                             >
                           </td>
                         </tr>
@@ -840,6 +848,78 @@
                   >
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Chat Modal -->
+      <div
+        class="modal fade"
+        id="chatModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="chatModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="consultaModalLabel">Quick Reply</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="user-area-container">
+                <div class="user-details mr-auto">
+                  <div class="user-img m-r-10">
+                    <a href="profile.html" title="Jennifer Robinson"
+                      ><img
+                        src="assets/img/patient-thumb-02.jpg"
+                        alt=""
+                        class="w-40 rounded-circle" /><span
+                        class="status online"
+                      ></span
+                    ></a>
+                  </div>
+                  <div class="user-info">
+                    <a href="profile.html"
+                      ><span class="font-bold">Bernardo Galaviz </span>
+                      <i class="typing-text">Away</i></a
+                    >
+                    <span class="last-seen">Last seen today at 7:50 AM</span>
+                  </div>
+                </div>
+              </div>
+              <div class="message-area-container mt-3">
+                <div class="message-area">
+                  <div class="input-group">
+                    <textarea
+                      class="form-control"
+                      placeholder="Type message..."
+                    ></textarea>
+                    <span class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fa fa-send"></i>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>
