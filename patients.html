@@ -517,7 +517,13 @@
                       <td colspan="4" class="text-right">
                         <div class="col-md-12 custom-linear-graph">
                           <div class="table-buttons">
-                            <a class="btn btn-primary"> Ficha</a>
+                            <a
+                              class="btn btn-primary"
+                              data-toggle="modal"
+                              data-target="#fichaModal"
+                            >
+                              Ficha</a
+                            >
                             <a
                               class="btn btn-primary"
                               data-toggle="modal"
@@ -696,7 +702,13 @@
                       <td colspan="4" class="text-right">
                         <div class="col-md-12 custom-linear-graph">
                           <div class="table-buttons">
-                            <a class="btn btn-primary"> Ficha</a>
+                            <a
+                              class="btn btn-primary"
+                              data-toggle="modal"
+                              data-target="#fichaModal"
+                            >
+                              Ficha</a
+                            >
                             <a
                               class="btn btn-primary"
                               data-toggle="modal"
@@ -878,7 +890,13 @@
                       <td colspan="4" class="text-right">
                         <div class="col-md-12 custom-linear-graph">
                           <div class="table-buttons">
-                            <a class="btn btn-primary"> Ficha</a>
+                            <a
+                              class="btn btn-primary"
+                              data-toggle="modal"
+                              data-target="#fichaModal"
+                            >
+                              Ficha</a
+                            >
                             <a
                               class="btn btn-primary"
                               data-toggle="modal"
@@ -969,7 +987,7 @@
           </div>
         </div>
       </div>
-      <!-- Modal -->
+      <!-- Modal Anadir Consulta -->
       <div
         class="modal fade"
         id="consultaModal"
@@ -1280,52 +1298,1021 @@
                           </div>
                         </div>
                       </div>
-
-                      <!-- <div class="m-t-20 text-center">
-                        <button class="btn btn-primary submit-btn">Save</button>
-                      </div> -->
                     </form>
                   </div>
                 </div>
               </div>
-
-              <!-- Button to toggle content 1 -->
-              <!-- <button
-                class="btn btn-primary"
+            </div>
+            <div class="modal-footer">
+              <button
                 type="button"
-                data-toggle="collapse"
-                data-target="#content1"
-                aria-expanded="false"
-                aria-controls="content1"
+                class="btn btn-secondary"
+                data-dismiss="modal"
               >
-                Toggle Content 1
-              </button> -->
-
-              <!-- Collapsible content 1 -->
-              <!-- <div class="collapse" id="content1">
-                <div class="card card-body">
-                  <p>This is the content for button 1.</p>
-                </div>
-              </div> -->
-
-              <!-- Button to toggle content 2 -->
-              <!-- <button
-                class="btn btn-primary"
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Ficha -->
+      <div
+        class="modal fade"
+        id="fichaModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="fichaModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <h5 class="modal-title" id="consultaModalLabel">
+              Consulta Modal Header
+            </h5> -->
+              <button
                 type="button"
-                data-toggle="collapse"
-                data-target="#content2"
-                aria-expanded="false"
-                aria-controls="content2"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
               >
-                Toggle Content 2
-              </button> -->
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="card-box profile-header">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="profile-view">
+                      <div class="profile-img-wrap">
+                        <div class="profile-img">
+                          <a href="#"
+                            ><img
+                              class="avatar"
+                              src="assets/img/doctor-03.jpg"
+                              alt=""
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="profile-basic">
+                        <div class="row">
+                          <div class="col-md-5 ficha-profile">
+                            <div class="profile-info-left">
+                              <h3 class="user-name m-t-0 mb-0">Sofia</h3>
+                              <small class="text-muted">
+                                <i class="fa fa-briefcase"></i>
+                                Manager</small
+                              >
+                            </div>
+                          </div>
+                          <div class="col-md-7">
+                            <ul class="personal-info">
+                              <li>
+                                <span class="title">Phone:</span>
+                                <span class="text"
+                                  ><a href="#">770-889-6484</a></span
+                                >
+                              </li>
+                              <li>
+                                <span class="title">Email:</span>
+                                <span class="text"
+                                  ><a href="#"
+                                    >cristinagroves@example.com</a
+                                  ></span
+                                >
+                              </li>
+                              <li>
+                                <span class="title">Birthday:</span>
+                                <span class="text">10/03/1989</span>
+                              </li>
+                            </ul>
 
-              <!-- Collapsible content 2 -->
-              <!-- <div class="collapse" id="content2">
-                <div class="card card-body">
-                  <p>This is the content for button 2.</p>
+                            <div class="row mt-3">
+                              <div class="col-sm-6">
+                                <a
+                                  href="#"
+                                  class="btn btn-primary"
+                                  style="width: 100%"
+                                >
+                                  Enviar mensaje
+                                </a>
+                              </div>
+                              <div class="col-sm-6">
+                                <a
+                                  href="#"
+                                  class="btn btn-primary"
+                                  style="width: 100%"
+                                >
+                                  Programar consulta
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div> -->
+                <div class="row mt-5">
+                  <div class="col-sm-12">
+                    <div class="row mt-3">
+                      <!-- Collapsible Ficha 0 -->
+                      <div class="collapse col-sm-12" id="ficha0">
+                        <div class="row">
+                          <div class="col-lg-8 mb-3">
+                            <h4 class="page-title mb-1">Perfil del cliente</h4>
+                            <p>
+                              Consulta cambia las informaciones de tu cliente.
+                            </p>
+                          </div>
+                          <div class="col-lg-10 offset-lg-1">
+                            <form class="row">
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label
+                                    >Nombre completo
+                                    <span class="text-danger">*</span></label
+                                  >
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="Sofia"
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label
+                                    >Ocupacion
+                                    <span class="text-danger">*</span></label
+                                  >
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="Manager"
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label
+                                    >Genero
+                                    <span class="text-danger">*</span></label
+                                  >
+                                  <select class="select">
+                                    <option value="" disabled selected>
+                                      Femenino
+                                    </option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label
+                                    >Residencia
+                                    <span class="text-danger">*</span></label
+                                  >
+                                  <select class="select">
+                                    <option value="" disabled selected>
+                                      Espana
+                                    </option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label
+                                    >Fireccion
+                                    <span class="text-danger">*</span></label
+                                  >
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label
+                                    >Codigo postal
+                                    <span class="text-danger">*</span></label
+                                  >
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="08008"
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label
+                                    >Numero de telefono
+                                    <span class="text-danger">*</span></label
+                                  >
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="770-889-6484"
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label
+                                    >Correo electronico
+                                    <span class="text-danger">*</span></label
+                                  >
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="cristinagroves@example.com"
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label
+                                    >Etiquetas
+                                    <span class="text-danger">*</span></label
+                                  >
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label
+                                    >Lugar de consulta
+                                    <span class="text-danger">*</span></label
+                                  >
+                                  <select class="select">
+                                    <option value="" disabled selected>
+                                      Todos los lugares
+                                    </option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label
+                                    >Nacimiento
+                                    <span class="text-danger">*</span></label
+                                  >
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="10/03/1989"
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label>Fecha de registro</label>
+                                  <div class="cal-icon">
+                                    <input
+                                      type="text"
+                                      class="form-control datetimepicker"
+                                      placeholder=""
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label
+                                    >Numero del proceso
+                                    <span class="text-danger">*</span></label
+                                  >
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label
+                                    >Numero de identificacion
+                                    <span class="text-danger">*</span></label
+                                  >
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label
+                                    >Numero sanitario individual
+                                    <span class="text-danger">*</span></label
+                                  >
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label
+                                    >Numero de identificacion fiscal
+                                    <span class="text-danger">*</span></label
+                                  >
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder=""
+                                    value=""
+                                  />
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Button to toggle Ficha 0 -->
+                    <button
+                      class="btn btn-primary extended-button"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#ficha0"
+                      aria-expanded="false"
+                      aria-controls="ficha0"
+                    >
+                      Mas informacion
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h1 class="modal-title">Ficha</h1>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-10 offset-lg-1">
+                    <form>
+                      <div class="row">
+                        <div class="col-lg-8 mb-3">
+                          <h4 class="page-title mb-1">
+                            Informaciones de consulta
+                          </h4>
+                          <p>Motivacion y expextativas para el seguimiento</p>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label
+                              >Motivo de consulta
+                              <span class="text-danger">*</span></label
+                            >
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Escriba aquí"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label
+                              >Expectativas
+                              <span class="text-danger">*</span></label
+                            >
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Escriba aquí"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label
+                              >Objectivos clinicos
+                              <span class="text-danger">*</span></label
+                            >
+                            <select
+                              placeholder="seleccionar objetivos"
+                              class="select"
+                              multiple
+                            >
+                              <option value="" disabled>
+                                selecciona tus objetivos
+                              </option>
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                              <option>Option 5</option>
+                              <option>Option 6</option>
+                              <option>Option 7</option>
+                              <option>Option 8</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label
+                              >Otras informaciones
+                              <span class="text-danger">*</span></label
+                            >
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Escriba aquí"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <!-- Button to toggle Ficha 1 -->
+                          <button
+                            class="btn btn-primary extended-button"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#ficha1"
+                            aria-expanded="false"
+                            aria-controls="ficha1"
+                          >
+                            Historia personal y social
+                          </button>
+                          <div class="row mt-3">
+                            <!-- Collapsible Ficha 1 -->
+                            <div class="collapse col-sm-12" id="ficha1">
+                              <div class="row">
+                                <div class="col-lg-8 mb-3">
+                                  <h4 class="page-title mb-1">
+                                    Historia personal y social
+                                  </h4>
+                                  <p>
+                                    Informaciones y habitos fisiologicos
+                                    sociales del cliente
+                                  </p>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label
+                                      >Funcion intestinal
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <select class="select">
+                                      <option value="" disabled selected>
+                                        Estrenimiento
+                                      </option>
+                                      <option>Option 1</option>
+                                      <option>Option 2</option>
+                                      <option>Option 3</option>
+                                      <option>Option 4</option>
+                                      <option>Option 5</option>
+                                      <option>Option 6</option>
+                                      <option>Option 7</option>
+                                      <option>Option 8</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label
+                                      >Calidad del sueno
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <select class="select">
+                                      <option value="" disabled selected>
+                                        Cerca de 6 horas/noche
+                                      </option>
+                                      <option>Option 1</option>
+                                      <option>Option 2</option>
+                                      <option>Option 3</option>
+                                      <option>Option 4</option>
+                                      <option>Option 5</option>
+                                      <option>Option 6</option>
+                                      <option>Option 7</option>
+                                      <option>Option 8</option>
+                                    </select>
+                                  </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label
+                                      >Fumador
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <select class="select">
+                                      <option value="" disabled selected>
+                                        Seleccionar opción
+                                      </option>
+                                      <option>Option 1</option>
+                                      <option>Option 2</option>
+                                      <option>Option 3</option>
+                                      <option>Option 4</option>
+                                      <option>Option 5</option>
+                                      <option>Option 6</option>
+                                      <option>Option 7</option>
+                                      <option>Option 8</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label
+                                      >Bebhole alco
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <select class="select">
+                                      <option value="" disabled selected>
+                                        Seleccionar opción
+                                      </option>
+                                      <option>Option 1</option>
+                                      <option>Option 2</option>
+                                      <option>Option 3</option>
+                                      <option>Option 4</option>
+                                      <option>Option 5</option>
+                                      <option>Option 6</option>
+                                      <option>Option 7</option>
+                                      <option>Option 8</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="form-group">
+                                    <label
+                                      >Actividad fisica
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <input
+                                      class="form-control"
+                                      type="text"
+                                      placeholder="Escriba aquí"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="form-group">
+                                    <label
+                                      >Otras informaciones
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <input
+                                      class="form-control"
+                                      type="text"
+                                      placeholder="Escriba aquí"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <!-- Button to toggle Ficha 2 -->
+                          <button
+                            class="btn btn-primary extended-button"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#ficha2"
+                            aria-expanded="false"
+                            aria-controls="ficha2"
+                          >
+                            Historia alimentaria
+                          </button>
+                          <div class="row mt-3">
+                            <!-- Collapsible Ficha 2 -->
+                            <div class="collapse col-sm-12" id="ficha2">
+                              <div class="row">
+                                <div class="col-lg-8 mb-3">
+                                  <h4 class="page-title mb-1">
+                                    Historia alimentaria
+                                  </h4>
+                                  <p>
+                                    Habitos y preferencias alimentarias del
+                                    cliente
+                                  </p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="form-group">
+                                    <label
+                                      >Hora habitual para levantarse
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <input
+                                      class="form-control"
+                                      type="text"
+                                      placeholder="Escriba aquí"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="form-group">
+                                    <label
+                                      >Hora habitual para acostarse
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <input
+                                      class="form-control"
+                                      type="text"
+                                      placeholder="Escriba aquí"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label
+                                      >Tipos de dieta
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <select class="select">
+                                      <option value="" disabled selected>
+                                        Ninguno
+                                      </option>
+                                      <option>Option 1</option>
+                                      <option>Option 2</option>
+                                      <option>Option 3</option>
+                                      <option>Option 4</option>
+                                      <option>Option 5</option>
+                                      <option>Option 6</option>
+                                      <option>Option 7</option>
+                                      <option>Option 8</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label
+                                      >Alimentos favoritos
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <select class="select">
+                                      <option value="" disabled selected>
+                                        Ninguno
+                                      </option>
+                                      <option>Option 1</option>
+                                      <option>Option 2</option>
+                                      <option>Option 3</option>
+                                      <option>Option 4</option>
+                                      <option>Option 5</option>
+                                      <option>Option 6</option>
+                                      <option>Option 7</option>
+                                      <option>Option 8</option>
+                                    </select>
+                                  </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label
+                                      >Alimentos rechazados
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <select class="select">
+                                      <option value="" disabled selected>
+                                        Ninguno
+                                      </option>
+                                      <option>Option 1</option>
+                                      <option>Option 2</option>
+                                      <option>Option 3</option>
+                                      <option>Option 4</option>
+                                      <option>Option 5</option>
+                                      <option>Option 6</option>
+                                      <option>Option 7</option>
+                                      <option>Option 8</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label
+                                      >Alergias
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <select class="select">
+                                      <option value="" disabled selected>
+                                        Ninguno
+                                      </option>
+                                      <option>Option 1</option>
+                                      <option>Option 2</option>
+                                      <option>Option 3</option>
+                                      <option>Option 4</option>
+                                      <option>Option 5</option>
+                                      <option>Option 6</option>
+                                      <option>Option 7</option>
+                                      <option>Option 8</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label
+                                      >Intolerancias alimentarias
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <select class="select">
+                                      <option value="" disabled selected>
+                                        Ninguno
+                                      </option>
+                                      <option>Option 1</option>
+                                      <option>Option 2</option>
+                                      <option>Option 3</option>
+                                      <option>Option 4</option>
+                                      <option>Option 5</option>
+                                      <option>Option 6</option>
+                                      <option>Option 7</option>
+                                      <option>Option 8</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label
+                                      >Deficiencias nutricionales
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <select class="select">
+                                      <option value="" disabled selected>
+                                        Ninguno
+                                      </option>
+                                      <option>Option 1</option>
+                                      <option>Option 2</option>
+                                      <option>Option 3</option>
+                                      <option>Option 4</option>
+                                      <option>Option 5</option>
+                                      <option>Option 6</option>
+                                      <option>Option 7</option>
+                                      <option>Option 8</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label
+                                      >Ingesta de agua
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <select class="select">
+                                      <option value="" disabled selected>
+                                        Seleccionar opción
+                                      </option>
+                                      <option>Option 1</option>
+                                      <option>Option 2</option>
+                                      <option>Option 3</option>
+                                      <option>Option 4</option>
+                                      <option>Option 5</option>
+                                      <option>Option 6</option>
+                                      <option>Option 7</option>
+                                      <option>Option 8</option>
+                                    </select>
+                                  </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                  <div class="form-group">
+                                    <label
+                                      >Otras informaciones
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <input
+                                      class="form-control"
+                                      type="text"
+                                      placeholder="Escriba aquí"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <!-- Button to toggle Ficha 3 -->
+                          <button
+                            class="btn btn-primary extended-button"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#ficha3"
+                            aria-expanded="false"
+                            aria-controls="ficha3"
+                          >
+                            Historia clicia
+                          </button>
+                          <div class="row mt-3">
+                            <!-- Collapsible Ficha 3 -->
+                            <div class="collapse col-sm-12" id="ficha3">
+                              <div class="row">
+                                <div class="col-lg-8 mb-3">
+                                  <h4 class="page-title mb-1">
+                                    Historia clicia
+                                  </h4>
+                                  <p>
+                                    Patologias, medicacion y antecedentes
+                                    personales y familiares
+                                  </p>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label
+                                      >Patologias
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <select
+                                      placeholder="seleccionar objetivos"
+                                      class="select"
+                                      multiple
+                                    >
+                                      <option value="" disabled>
+                                        selecciona tus objetivos
+                                      </option>
+                                      <option>Option 1</option>
+                                      <option>Option 2</option>
+                                      <option>Option 3</option>
+                                      <option>Option 4</option>
+                                      <option>Option 5</option>
+                                      <option>Option 6</option>
+                                      <option>Option 7</option>
+                                      <option>Option 8</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="form-group">
+                                    <label
+                                      >Medicacion
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <input
+                                      class="form-control"
+                                      type="text"
+                                      placeholder="Ninguna"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="form-group">
+                                    <label
+                                      >Antecedentes personales
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <input
+                                      class="form-control"
+                                      type="text"
+                                      placeholder="Ninguno"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="form-group">
+                                    <label
+                                      >Antecedentes familiares
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <input
+                                      class="form-control"
+                                      type="text"
+                                      placeholder="Ninguno"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="form-group">
+                                    <label
+                                      >Otras informaciones
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <input
+                                      class="form-control"
+                                      type="text"
+                                      placeholder="Escriba aquí"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <!-- Button to toggle Ficha 4 -->
+                          <button
+                            class="btn btn-primary extended-button"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#ficha4"
+                            aria-expanded="false"
+                            aria-controls="ficha4"
+                          >
+                            Objectivos
+                          </button>
+                          <div class="row mt-3">
+                            <!-- Collapsible Ficha 4 -->
+                            <div class="collapse col-sm-12" id="ficha4">
+                              <div class="row">
+                                <div class="col-lg-8 mb-3">
+                                  <h4 class="page-title mb-1">
+                                    Define un nuevo objectivo
+                                  </h4>
+                                  <p>
+                                    Los objectivos son excelentes para mantener
+                                    tu cliente motivado
+                                  </p>
+                                </div>
+
+                                <div class="col-sm-12">
+                                  <div class="form-group">
+                                    <label
+                                      >Descripcion
+                                      <span class="text-danger">*</span></label
+                                    >
+                                    <textarea
+                                      class="form-control"
+                                      rows="5"
+                                      placeholder="el: Beber mas de 1 litro de agua al dia"
+                                    ></textarea>
+                                  </div>
+                                </div>
+
+                                <div class="col-sm-12">
+                                  <div class="form-group">
+                                    <label>Fecha limite</label>
+                                    <div class="cal-icon">
+                                      <input
+                                        type="text"
+                                        class="form-control datetimepicker"
+                                        placeholder="27/11/2023"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <!-- Button to toggle Ficha 5 -->
+                          <button
+                            class="btn btn-primary extended-button"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#ficha5"
+                            aria-expanded="false"
+                            aria-controls="ficha5"
+                          >
+                            Archivos
+                          </button>
+                          <div class="row mt-3">
+                            <!-- Collapsible Ficha 5 -->
+                            <div class="collapse col-sm-12" id="ficha5">
+                              <div class="row">
+                                <div class="col-lg-8 mb-3">
+                                  <h4 class="page-title mb-1">Archivos</h4>
+                                  <p>Archivos adjuntos del cliente</p>
+                                </div>
+
+                                <div class="col-sm-12">
+                                  <div class="form-group">
+                                    <!-- <label>Avatar</label> -->
+                                    <div class="profile-upload">
+                                      <div class="upload-img">
+                                        <img alt="" src="assets/img/user.jpg" />
+                                      </div>
+                                      <div class="upload-input">
+                                        <input
+                                          type="file"
+                                          class="form-control"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="modal-footer">
               <button
