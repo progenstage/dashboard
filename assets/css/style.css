@@ -5077,7 +5077,7 @@ i.fa.fa-circle.bad::before {
   color: #007a9a;
 }
 
-.extended-button{
+.extended-button {
   width: 100%;
   color: #007a9a !important;
   background: transparent;
@@ -5085,7 +5085,11 @@ i.fa.fa-circle.bad::before {
 }
 
 .extended-button:hover,
-.extended-button:focus{
+.extended-button:focus {
   color: #fff !important;
+}
 
+.ficha-profile {
+  display: flex;
+  align-items: center;
 }
