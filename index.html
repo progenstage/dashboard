@@ -667,6 +667,68 @@
                             >
                           </td>
                         </tr>
+                        <tr>
+                          <td colspan="3">
+                            <div class="chat-note">
+                              <span
+                                >Chat de <a href="#">Dr Crespo</a> Sobre
+                                paciente <a href="#">Bernardo Galaviz</a> (34
+                                Anos)</span
+                              >
+                            </div>
+                            <a class="avatar" href="#">B</a>
+                            <h2>
+                              <a href="#"
+                                >Ayer: Yo: El paciente tiene dolor en la cabeza.
+                                <span
+                                  ><b>9:10: Dietista:</b> ya esta en cetosis?
+                                  Voy communicar con el paciente.</span
+                                ></a
+                              >
+                            </h2>
+                          </td>
+
+                          <td class="text-right" colspan="2">
+                            <a
+                              href="#"
+                              class="btn btn-outline-primary take-btn"
+                              data-toggle="modal"
+                              data-target="#chatModal"
+                              >Chat History</a
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="3">
+                            <div class="chat-note">
+                              <span
+                                >Chat de <a href="#">Dr Crespo</a> Sobre
+                                paciente <a href="#">Bernardo Galaviz</a> (34
+                                Anos)</span
+                              >
+                            </div>
+                            <a class="avatar" href="#">B</a>
+                            <h2>
+                              <a href="#"
+                                >Ayer: Yo: El paciente tiene dolor en la cabeza.
+                                <span
+                                  ><b>9:10: Dietista:</b> ya esta en cetosis?
+                                  Voy communicar con el paciente.</span
+                                ></a
+                              >
+                            </h2>
+                          </td>
+
+                          <td class="text-right" colspan="2">
+                            <a
+                              href="#"
+                              class="btn btn-outline-primary take-btn"
+                              data-toggle="modal"
+                              data-target="#chatModal"
+                              >Chat History</a
+                            >
+                          </td>
+                        </tr>
 
                         <!-- Repeat similar structure for other rows -->
                       </tbody>
@@ -677,98 +739,274 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4 col-xl-4">
               <div class="card member-panel">
-                <div class="card-header bg-white">
+                <!-- <div class="card-header bg-white">
                   <h4 class="card-title mb-0">Prescripcion Express</h4>
-                </div>
-                <div
-                  class="input-group"
-                  style="width: 100%; padding: 0 15px 15px 15px"
-                >
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="buscar un paciente"
-                  />
-                  <div class="input-group-append">
-                    <button class="btn btn-primary" type="button">
-                      <i class="fa fa-search"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <ul class="contact-list">
-                    <li>
-                      <div class="contact-cont">
-                        <div class="float-left user-img m-r-10">
-                          <a href="patients.html" title="John Doe"
-                            ><img
-                              src="assets/img/user.jpg"
-                              alt=""
-                              class="w-40 rounded-circle" /><span
-                              class="status online"
-                            ></span
-                          ></a>
-                        </div>
-                        <div class="contact-info">
-                          <span class="contact-name text-ellipsis"
-                            >John Doe</span
-                          >
-                          <span class="contact-date">MBBS, MD</span>
-                        </div>
-                      </div>
+                </div> -->
+                <div class="card-header bg-white quick-tab">
+                  <ul class="nav nav-tabs" id="myTabs" role="tablist">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        id="tab1"
+                        data-toggle="tab"
+                        href="#content1"
+                        role="tab"
+                        aria-controls="content1"
+                        aria-selected="true"
+                        >Prescripcion Express</a
+                      >
                     </li>
-                    <li>
-                      <div class="contact-cont">
-                        <div class="float-left user-img m-r-10">
-                          <a href="patients.html" title="Richard Miles"
-                            ><img
-                              src="assets/img/user.jpg"
-                              alt=""
-                              class="w-40 rounded-circle" /><span
-                              class="status offline"
-                            ></span
-                          ></a>
-                        </div>
-                        <div class="contact-info">
-                          <span class="contact-name text-ellipsis"
-                            >Richard Miles</span
-                          >
-                          <span class="contact-date">MD</span>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="contact-cont">
-                        <div class="float-left user-img m-r-10">
-                          <a href="patients.html" title="John Doe"
-                            ><img
-                              src="assets/img/user.jpg"
-                              alt=""
-                              class="w-40 rounded-circle" /><span
-                              class="status away"
-                            ></span
-                          ></a>
-                        </div>
-                        <div class="contact-info">
-                          <span class="contact-name text-ellipsis"
-                            >John Doe</span
-                          >
-                          <span class="contact-date">BMBS</span>
-                        </div>
-                      </div>
-                    </li>
-                    <li
-                      class="menu-title quick-patient"
-                      data-toggle="modal"
-                      data-target="#quickPatient"
-                    >
-                      ¿Extraviado? Agregar paciente
-                      <a href="#" class="add-user-icon"
-                        ><i class="fa fa-plus"></i
-                      ></a>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="tab2"
+                        data-toggle="tab"
+                        href="#content2"
+                        role="tab"
+                        aria-controls="content2"
+                        aria-selected="false"
+                        >Materiales Descargables</a
+                      >
                     </li>
                   </ul>
                 </div>
+                <div class="tab-content">
+                  <div
+                    class="tab-pane fade show active"
+                    id="content1"
+                    role="tabpanel"
+                    aria-labelledby="tab1"
+                  >
+                    <!-- Content for Tab 1 goes here -->
+                    <div
+                      class="input-group"
+                      style="width: 100%; padding: 0 15px 15px 15px"
+                    >
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="buscar un paciente"
+                      />
+                      <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">
+                          <i class="fa fa-search"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="row quick-express">
+                      <div class="col-lg-10 offset-lg-1">
+                        <form>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label
+                                  >Nombre - Apellido
+                                  <span class="text-danger">*</span></label
+                                >
+                                <input
+                                  class="form-control"
+                                  type="text"
+                                  placeholder="Nombre"
+                                />
+                              </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label
+                                  >Telefono
+                                  <span class="text-danger">*</span></label
+                                >
+                                <input
+                                  class="form-control"
+                                  type="text"
+                                  placeholder="número de teléfono"
+                                />
+                              </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                              <div class-form-group="">
+                                <label>Correo </label>
+                                <input
+                                  class="form-control"
+                                  type="text"
+                                  placeholder="correo electrónico"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label
+                                  >Partir de la fecha
+                                  <span class="text-danger">*</span></label
+                                >
+                                <div class="cal-icon">
+                                  <input
+                                    type="text"
+                                    class="form-control datetimepicker"
+                                    placeholder=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label
+                                  >Hasta la fecha
+                                  <span class="text-danger">*</span></label
+                                >
+                                <div class="cal-icon">
+                                  <input
+                                    type="text"
+                                    class="form-control datetimepicker"
+                                    placeholder=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label
+                                  >Seleccionar fase
+                                  <span class="text-danger">*</span></label
+                                >
+                                <select class="select">
+                                  <option value="" disabled selected>
+                                    Fase
+                                  </option>
+                                  <option>Fase 1</option>
+                                  <option>Fase 2</option>
+                                  <option>Fase 3</option>
+                                  <option>Fase 4</option>
+                                  <option>Fase 5</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="form-group">
+                                <label
+                                  >Comentario
+                                  <span class="text-danger">*</span></label
+                                >
+                                <textarea
+                                  class="form-control"
+                                  rows="2"
+                                  placeholder="Comentario"
+                                ></textarea>
+                              </div>
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="form-group text-right">
+                                <button class="btn btn-primary" type="submit">
+                                  Anadir
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="content2"
+                    role="tabpanel"
+                    aria-labelledby="tab2"
+                  >
+                    <div class="col-lg-10 offset-lg-1">
+                      <div class="row pdf-container">
+                        <!-- <div class="col-12">
+                          <h4>PDF Files</h4>
+                        </div> -->
+                        <div class="col-12">
+                          <!-- Row 1 -->
+                          <div class="row">
+                            <div class="col-4">
+                              <p>Fase 1 explicado</p>
+                            </div>
+                            <div class="col-4">
+                              <p>January 1, 2023</p>
+                            </div>
+                            <div class="col-4">
+                              <a
+                                href="/assets/pdf/Fase 1 Progen ES (reducido).pdf"
+                                download
+                                >Descargar</a
+                              >
+                            </div>
+                          </div>
+                          <!-- Row 2 -->
+                          <div class="row">
+                            <div class="col-4">
+                              <p>Fase 2 explicado</p>
+                            </div>
+                            <div class="col-4">
+                              <p>February 15, 2023</p>
+                            </div>
+                            <div class="col-4">
+                              <a
+                                href="/assets/pdf/Fase 2 Progen ES (reducido).pdf"
+                                download
+                                >Descargar</a
+                              >
+                            </div>
+                          </div>
+                          <!-- Row 3 -->
+                          <div class="row">
+                            <div class="col-4">
+                              <p>Fase 3 explicado</p>
+                            </div>
+                            <div class="col-4">
+                              <p>March 22, 2023</p>
+                            </div>
+                            <div class="col-4">
+                              <a
+                                href="/assets/pdf/Fase 3 Progen ES (reducido).pdf"
+                                download
+                                >Descargar</a
+                              >
+                            </div>
+                          </div>
+                          <!-- Row 4 -->
+                          <div class="row">
+                            <div class="col-4">
+                              <p>Fase 4 explicado</p>
+                            </div>
+                            <div class="col-4">
+                              <p>April 8, 2023</p>
+                            </div>
+                            <div class="col-4">
+                              <a
+                                href="/assets/pdf/Fase 4 Progen ES (reducido).pdf"
+                                download
+                                >Descargar</a
+                              >
+                            </div>
+                          </div>
+                          <!-- Row 5 -->
+                          <div class="row">
+                            <div class="col-4">
+                              <p>Fase 5 explicado</p>
+                            </div>
+                            <div class="col-4">
+                              <p>May 17, 2023</p>
+                            </div>
+                            <div class="col-4">
+                              <a
+                                href="/assets/pdf/Fase 5 Progen ES (reducido).pdf"
+                                download
+                                >Descargar</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <!-- <div class="card-footer text-center bg-white">
                   <a href="doctors.html" class="text-muted"
                     >Ver todos los Médicos</a
@@ -852,7 +1090,7 @@
         </div>
       </div>
       <!-- Quick Patient Modal -->
-      <div
+      <!-- <div
         class="modal fade"
         id="quickPatient"
         tabindex="-1"
@@ -988,7 +1226,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="sidebar-overlay" data-reff=""></div>
     <script src="assets/js/jquery-3.2.1.min.js"></script>
