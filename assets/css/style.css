@@ -5093,3 +5093,16 @@ i.fa.fa-circle.bad::before {
   display: flex;
   align-items: center;
 }
+
+li.menu-title.quick-patient {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px;
+  color: #007a9a;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: normal;
+  cursor: pointer;
+}
