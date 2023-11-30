@@ -5110,3 +5110,15 @@ li.menu-title.quick-patient {
 .chat-note {
   margin: 10px 0;
 }
+
+.row.quick-express label,
+.row.quick-express input::placeholder,
+.row.quick-express textarea {
+  font-size: 12px;
+}
+
+.quick-tab ul li a,
+.pdf-container p,
+.pdf-container a {
+  font-size: 10px;
+}
