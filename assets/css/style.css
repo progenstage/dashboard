@@ -5106,3 +5106,7 @@ li.menu-title.quick-patient {
   font-weight: normal;
   cursor: pointer;
 }
+
+.chat-note {
+  margin: 10px 0;
+}
