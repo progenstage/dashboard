@@ -778,14 +778,15 @@
                     aria-labelledby="tab1"
                   >
                     <!-- Content for Tab 1 goes here -->
-                    <div
+                   <div
                       class="input-group"
                       style="width: 100%; padding: 0 15px 15px 15px"
                     >
                       <input
                         type="text"
-                        class="form-control"
-                        placeholder="buscar un paciente"
+                        class="form-control typeahead"
+                        placeholder="Buscar un paciente"
+                        id="search-input"
                       />
                       <div class="input-group-append">
                         <button class="btn btn-primary" type="button">
@@ -1239,5 +1240,90 @@
     <script src="assets/js/moment.min.js"></script>
     <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
     <script src="assets/js/app.js"></script>
+     <!-- Typeahead and Bloodhound -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
+    <!-- Dummy data for demonstration -->
+    <script>
+      var dummyData = [
+        {
+          firstName: "John",
+          lastName: "Doe",
+          phone: "123-456-7890",
+          city: "New York",
+          date: "22/07/23",
+        },
+        {
+          firstName: "john",
+          lastName: "Smith",
+          phone: "987-654-3210",
+          city: "Los Angeles",
+          date: "22/07/23",
+        },
+        {
+          firstName: "Alice",
+          lastName: "Johnson",
+          phone: "555-123-4567",
+          city: "Chicago",
+          date: "22/07/23",
+        },
+        {
+          firstName: "Bob",
+          lastName: "Williams",
+          phone: "222-333-4444",
+          city: "San Francisco",
+          date: "22/07/23",
+        },
+        {
+          firstName: "Eva",
+          lastName: "Brown",
+          phone: "777-888-9999",
+          city: "Miami",
+          date: "22/07/23",
+        },
+      ];
+
+      // Initialize Bloodhound suggestion engine
+      var bloodhound = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.obj.whitespace(
+          "firstName",
+          "lastName"
+        ),
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        local: dummyData,
+      });
+
+      // Initialize typeahead
+      $(".typeahead").typeahead(
+        {
+          hint: true,
+          highlight: true,
+          minLength: 1,
+        },
+        {
+          name: "data",
+          source: bloodhound,
+          display: function (item) {
+            return item.firstName + " " + item.lastName;
+          },
+          templates: {
+            suggestion: function (item) {
+              return (
+                "<div>" +
+                item.firstName +
+                " " +
+                item.lastName +
+                " - " +
+                item.phone +
+                ", " +
+                item.city +
+                ", " +
+                item.date +
+                "</div>"
+              );
+            },
+          },
+        }
+      );
+    </script>
   </body>
 </html>
