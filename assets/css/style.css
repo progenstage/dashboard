@@ -5122,3 +5122,40 @@ li.menu-title.quick-patient {
 .pdf-container a {
   font-size: 10px;
 }
+
+.tt-menu {
+  width: 100%;
+  background-color: #ffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-top: 5px;
+}
+.tt-suggestion {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #f4f4f4;
+  transition: background-color 0.3s;
+}
+
+.tt-suggestion:hover {
+  background-color: #007a9a;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.tt-suggestion p {
+  margin: 0;
+}
+
+span.twitter-typeahead {
+  width: 80%;
+}
+
+.tab-content .input-group {
+  justify-content: center;
+}
+
