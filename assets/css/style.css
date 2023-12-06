@@ -5232,3 +5232,8 @@ span.twitter-typeahead {
 .card-header .chat-search{
   justify-content: flex-end !important;
 }
+
+.chat-open-body {
+  height: 250px;
+  overflow: scroll;
+}
