@@ -5123,6 +5123,76 @@ li.menu-title.quick-patient {
   font-size: 10px;
 }
 
+b.conversation-time,
+b.conversation-time i {
+  color: #007a9a;
+}
+
+span.short-text,
+span.day {
+  color: #aaa !important;
+  vertical-align: middle;
+}
+
+.chat-module-container {
+  padding: 0.75rem 0.75rem 0 0.75rem;
+}
+
+.chat-container {
+  padding: 0.75rem;
+}
+
+.chat-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conversation-link {
+  font-size: 0.775rem;
+  margin-left: 5px;
+  color: #007a9a;
+  text-decoration: underline;
+}
+
+.chat-container {
+  transition: background-color 0.3s;
+  background: #f4f4f4;
+  border-radius: 5px;
+}
+
+.chat-container:hover {
+  background-color: #007a9a;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.chat-container:hover .conversation-time,
+.chat-container:hover .conversation-time i,
+.chat-container:hover span.short-text,
+.chat-container:hover .conversation-link,
+.chat-container:hover span.day {
+  color: #fff !important;
+}
+
+.chat-container:hover .avatar {
+  background-color: #fff;
+}
+
+.chat-container:hover .avatar i {
+  color: #007a9a;
+}
+
+.chat-open-body .chat-wrap-inner {
+  position: unset !important;
+}
+
 .tt-menu {
   width: 100%;
   background-color: #ffff;
@@ -5159,3 +5229,6 @@ span.twitter-typeahead {
   justify-content: center;
 }
 
+.card-header .chat-search{
+  justify-content: flex-end !important;
+}
