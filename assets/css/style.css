@@ -5229,11 +5229,17 @@ span.twitter-typeahead {
   justify-content: center;
 }
 
-.card-header .chat-search{
+.card-header .chat-search {
   justify-content: flex-end !important;
 }
 
 .chat-open-body {
   height: 250px;
   overflow: scroll;
+}
+
+.chat-module-container .chat-footer {
+  position: sticky;
+  bottom: -20px;
+  width: 100%;
 }
