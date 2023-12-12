@@ -5233,13 +5233,61 @@ span.twitter-typeahead {
   justify-content: flex-end !important;
 }
 
-.chat-open-body {
+.chats {
   height: 250px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .chat-module-container .chat-footer {
   position: sticky;
   bottom: -20px;
   width: 100%;
+}
+
+.history-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul#recentVisitsList li {
+  background: #fff;
+  border-radius: 5px;
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.open-info,
+.recent-info {
+  padding: 15px;
+}
+
+.open-info[aria-expanded="true"] {
+  background-color: #007a9a;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+}
+
+.open-info button[aria-expanded="true"] {
+  color: #fff !important;
+}
+
+ul#recentVisitsList button {
+  padding: 0;
+  text-decoration: none;
+  font-size: 15px;
+  color: #000;
+  font-weight: bold;
+}
+
+.patient-data {
+  display: flex;
+  gap: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .patient-data label {
+    width: 150px;
+  }
 }
