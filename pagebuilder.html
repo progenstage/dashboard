@@ -1,0 +1,3121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.ico"
+    />
+    <title>Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/dataTables.bootstrap4.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap-datetimepicker.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/pagebuilder.css" />
+  </head>
+
+  <body>
+    <div class="main-wrapper">
+      <div class="header">
+        <div class="header-left">
+          <a href="index-2.html" class="logo">
+            <img src="assets/img/logo.png" width="100" height="35" alt="" />
+          </a>
+        </div>
+        <a id="toggle_btn" href="javascript:void(0);"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a id="mobile_btn" class="mobile_btn float-left" href="#sidebar"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <ul class="nav user-menu float-right">
+          <li class="nav-item dropdown d-none d-sm-block">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="badge badge-pill bg-danger float-right">3</span>
+            </a>
+            <div class="dropdown-menu notifications">
+              <div class="topnav-dropdown-header">
+                <span>Notificaciones</span>
+              </div>
+              <div class="drop-scroll">
+                <ul class="notification-list">
+                  <li class="notification-message">
+                    <a href="activities.html">
+                      <div class="media">
+                        <span class="avatar">
+                          <img
+                            alt="John Doe"
+                            src="assets/img/user.jpg"
+                            class="img-fluid"
+                          />
+                        </span>
+                        <div class="media-body">
+                          <p class="noti-details">
+                            <span class="noti-title">John Doe</span> añadió una
+                            nueva tarea
+                            <span class="noti-title"
+                              >Reserva de cita de paciente</span
+                            >
+                          </p>
+                          <p class="noti-time">
+                            <span class="notification-time"
+                              >Hace 4 minutos</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notification-message">
+                    <a href="activities.html">
+                      <div class="media">
+                        <span class="avatar">V</span>
+                        <div class="media-body">
+                          <p class="noti-details">
+                            <span class="noti-title">Tarah Shropshire</span>
+                            cambió el nombre de la tarea
+                            <span class="noti-title"
+                              >Reserva de cita con pasarela de pago</span
+                            >
+                          </p>
+                          <p class="noti-time">
+                            <span class="notification-time"
+                              >Hace 6 minutos</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notification-message">
+                    <a href="activities.html">
+                      <div class="media">
+                        <span class="avatar">L</span>
+                        <div class="media-body">
+                          <p class="noti-details">
+                            <span class="noti-title">Misty Tison</span> añadió a
+                            <span class="noti-title">Domenic Houston</span> y
+                            <span class="noti-title">Claire Mapes</span> al
+                            proyecto
+                            <span class="noti-title"
+                              >Módulo de disponibilidad de médicos</span
+                            >
+                          </p>
+                          <p class="noti-time">
+                            <span class="notification-time"
+                              >Hace 8 minutos</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notification-message">
+                    <a href="activities.html">
+                      <div class="media">
+                        <span class="avatar">G</span>
+                        <div class="media-body">
+                          <p class="noti-details">
+                            <span class="noti-title">Rolland Webber</span>
+                            completó la tarea
+                            <span class="noti-title"
+                              >Conferencia de video entre paciente y
+                              médico</span
+                            >
+                          </p>
+                          <p class="noti-time">
+                            <span class="notification-time"
+                              >Hace 12 minutos</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notification-message">
+                    <a href="activities.html">
+                      <div class="media">
+                        <span class="avatar">V</span>
+                        <div class="media-body">
+                          <p class="noti-details">
+                            <span class="noti-title">Bernardo Galaviz</span>
+                            añadió una nueva tarea
+                            <span class="noti-title"
+                              >Módulo de chat privado</span
+                            >
+                          </p>
+                          <p class="noti-time">
+                            <span class="notification-time">Hace 2 días</span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="topnav-dropdown-footer">
+                <a href="activities.html">Ver todas las notificaciones</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown has-arrow">
+            <a
+              href="#"
+              class="dropdown-toggle nav-link user-link"
+              data-toggle="dropdown"
+            >
+              <span class="user-img">
+                <img
+                  class="rounded-circle"
+                  src="assets/img/user.jpg"
+                  width="24"
+                  alt="Admin"
+                />
+                <span class="status online"></span>
+              </span>
+              <span>Admin</span>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="profile.html">Mi perfil</a>
+              <a class="dropdown-item" href="edit-profile.html"
+                >Editar perfil</a
+              >
+              <a class="dropdown-item" href="settings.html">Configuración</a>
+              <a class="dropdown-item" href="login.html">Cerrar sesión</a>
+            </div>
+          </li>
+        </ul>
+        <div class="dropdown mobile-user-menu float-right">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fa fa-ellipsis-v"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="profile.html">Mi perfil</a>
+            <a class="dropdown-item" href="edit-profile.html">Editar perfil</a>
+            <a class="dropdown-item" href="settings.html">Configuración</a>
+            <a class="dropdown-item" href="login.html">Cerrar sesión</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-inner slimscroll">
+          <div id="sidebar-menu" class="sidebar-menu">
+            <ul>
+              <li class="menu-title">Principal</li>
+              <li>
+                <a href="index-2.html"
+                  ><i class="fa fa-dashboard"></i> <span>Administrador</span></a
+                >
+              </li>
+              <li>
+                <a href="doctors.html"
+                  ><i class="fa fa-user-md"></i> <span>Médicos</span></a
+                >
+              </li>
+              <li>
+                <a href="patients.html"
+                  ><i class="fa fa-user"></i> <span>Pacientes</span></a
+                >
+              </li>
+              <li>
+                <a href="appointments.html"
+                  ><i class="fa fa-calendar"></i> <span>Citas</span></a
+                >
+              </li>
+              <li>
+                <a href="schedule.html"
+                  ><i class="fa fa-calendar-check-o"></i>
+                  <span>Horario del médico</span></a
+                >
+              </li>
+
+              <!-- <li>
+                <a href="assets.html"
+                  ><i class="fa fa-cube"></i> <span>Assets</span></a
+                >
+              </li> -->
+              <li>
+                <a href="activities.html"
+                  ><i class="fa fa-bell-o"></i> <span>Actividades</span></a
+                >
+              </li>
+
+              <li>
+                <a href="settings.html"
+                  ><i class="fa fa-cog"></i> <span>Configuración</span></a
+                >
+              </li>
+
+              <li>
+                <a href="login.html"
+                  ><i class="fa fa-sign-out"></i> <span>Cerrar sesión</span></a
+                >
+              </li>
+              <!-- <li class="active" draggable="true" data-template="container">
+                <a href="pagebuilder.html"
+                  ><i class="fa fa-share-alt"></i> <span>Page Builder</span></a
+                >
+              </li> -->
+              <li class="submenu active">
+                <a href="pagebuilder.html"
+                  ><i class="fa fa-share-alt"></i> <span>Page Builder</span>
+                  <span class="menu-arrow"></span
+                ></a>
+                <ul style="display: none">
+                  <li class="submenu">
+                    <a href="javascript:void(0);"
+                      ><span>Layout</span> <span class="menu-arrow"></span
+                    ></a>
+                    <ul style="display: none">
+                      <li draggable="true" data-template="row">
+                        <a href="javascript:void(0);"><span>Row</span></a>
+                      </li>
+
+                      <li class="submenu">
+                        <a href="javascript:void(0);"
+                          ><span>Columns</span> <span class="menu-arrow"></span
+                        ></a>
+                        <ul style="display: none">
+                          <li draggable="true" data-template="column-1">
+                            <a href="javascript:void(0);"
+                              ><span>1 Column</span></a
+                            >
+                          </li>
+                          <li draggable="true" data-template="column-2">
+                            <a href="javascript:void(0);"
+                              ><span>2 Columns</span></a
+                            >
+                          </li>
+                          <li draggable="true" data-template="column-3">
+                            <a href="javascript:void(0);"
+                              ><span>3 Columns</span></a
+                            >
+                          </li>
+                          <li draggable="true" data-template="column-4">
+                            <a href="javascript:void(0);"
+                              ><span>4 Columns</span></a
+                            >
+                          </li>
+                          <li draggable="true" data-template="column-60/40">
+                            <a href="javascript:void(0);"
+                              ><span>60/40 Columns</span></a
+                            >
+                          </li>
+                          <li draggable="true" data-template="column-40/60">
+                            <a href="javascript:void(0);"
+                              ><span>40/60 Columns</span></a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+
+                      <!-- <li draggable="true" data-template="column-6">
+                        <a href="javascript:void(0);"><span>6 Columns</span></a>
+                      </li>
+                      <li draggable="true" data-template="column-7">
+                        <a href="javascript:void(0);"><span>7 Columns</span></a>
+                      </li>
+                      <li draggable="true" data-template="column-8">
+                        <a href="javascript:void(0);"><span>8 Columns</span></a>
+                      </li>
+                      <li draggable="true" data-template="column-9">
+                        <a href="javascript:void(0);"><span>9 Columns</span></a>
+                      </li>
+                      <li draggable="true" data-template="column-10">
+                        <a href="javascript:void(0);"
+                          ><span>10 Columns</span></a
+                        >
+                      </li>
+                      <li draggable="true" data-template="column-11">
+                        <a href="javascript:void(0);"
+                          ><span>11 Columns</span></a
+                        >
+                      </li>
+                      <li draggable="true" data-template="column-12">
+                        <a href="javascript:void(0);"
+                          ><span>12 Columns</span></a
+                        >
+                      </li> -->
+                    </ul>
+                  </li>
+                  <li class="submenu">
+                    <a href="javascript:void(0);"
+                      ><span>Dashboard Widgets</span>
+                      <span class="menu-arrow"></span
+                    ></a>
+                    <ul style="display: none">
+                      <li draggable="true" data-template="top-card">
+                        <a href="javascript:void(0);"><span>Top Card</span></a>
+                      </li>
+                      <!-- <li draggable="true" data-template="medicios-top">
+                        <a href="javascript:void(0);"><span>Medicos</span></a>
+                      </li>
+                      <li draggable="true" data-template="pacientes-top">
+                        <a href="javascript:void(0);"><span>Pacientes</span></a>
+                      </li>
+                      <li draggable="true" data-template="atendidos-top">
+                        <a href="javascript:void(0);"><span>Atendidos</span></a>
+                      </li>
+                      <li draggable="true" data-template="pendientes-top">
+                        <a href="javascript:void(0);"
+                          ><span>Pendientes</span></a
+                        >
+                      </li> -->
+                      <!-- <li class="submenu">
+                        <a href="javascript:void(0);">
+                          <span> Level 2</span> <span class="menu-arrow"></span
+                        ></a>
+                        <ul style="display: none">
+                          <li><a href="javascript:void(0);">Level 3</a></li>
+                          <li><a href="javascript:void(0);">Level 3</a></li>
+                        </ul>
+                      </li> -->
+                      <!-- <li>
+                        <a href="javascript:void(0);"><span>Level 2</span></a>
+                      </li> -->
+                    </ul>
+                  </li>
+                  <li class="submenu">
+                    <a href="javascript:void(0);"
+                      ><span>Thumbnails</span> <span class="menu-arrow"></span
+                    ></a>
+                    <ul style="display: none">
+                      <li draggable="true" data-template="medicos-thumbnail">
+                        <a
+                          class="thumbnail-container"
+                          href="javascript:void(0);"
+                          ><span>Medicos</span>
+                          <span
+                            ><img
+                              class="thumbnail"
+                              src="/assets/img/medicos.png"
+                              alt="" /></span
+                        ></a>
+                      </li>
+                      <li draggable="true" data-template="pacientes-thumbnail">
+                        <a
+                          class="thumbnail-container"
+                          href="javascript:void(0);"
+                          ><span>Pacientes</span>
+                          <span
+                            ><img
+                              class="thumbnail"
+                              src="/assets/img/patient.png"
+                              alt="" /></span
+                        ></a>
+                      </li>
+                      <li draggable="true" data-template="atendidos-thumbnail">
+                        <a
+                          class="thumbnail-container"
+                          href="javascript:void(0);"
+                          ><span>Atendidos</span>
+                          <span
+                            ><img
+                              class="thumbnail"
+                              src="/assets/img/attendidos.png"
+                              alt="" /></span
+                        ></a>
+                      </li>
+                      <li draggable="true" data-template="pendientes-thumbnail">
+                        <a
+                          class="thumbnail-container"
+                          href="javascript:void(0);"
+                          ><span>Pendientes</span>
+                          <span
+                            ><img
+                              class="thumbnail"
+                              src="/assets/img/pendientes.png"
+                              alt="" /></span
+                        ></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="submenu">
+                    <a href="javascript:void(0);"
+                      ><span>Titles</span> <span class="menu-arrow"></span
+                    ></a>
+                    <ul style="display: none">
+                      <li draggable="true" data-template="medicos-title">
+                        <a href="javascript:void(0);"
+                          ><span>Medicos Title</span></a
+                        >
+                      </li>
+                      <li draggable="true" data-template="pacientes-title">
+                        <a href="javascript:void(0);"
+                          ><span>Pacientes Title</span></a
+                        >
+                      </li>
+                      <li draggable="true" data-template="atendidos-title">
+                        <a href="javascript:void(0);"
+                          ><span>Atendidos Title</span></a
+                        >
+                      </li>
+                      <li draggable="true" data-template="pendientes-title">
+                        <a href="javascript:void(0);"
+                          ><span>Pendientes Title</span></a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <library style="display: none">
+        <div id="js-tooltip">
+          <div class="js-tooltip">
+            <a href="javascript:">Edit</a>
+            <a href="javascript:">Remove</a>
+          </div>
+        </div>
+        <ul id="js-templates">
+          <li data-label="row">
+            <div class="row" data-handle>row</div>
+          </li>
+          <li data-label="title">
+            <h2 data-handle>TItle</h2>
+          </li>
+
+          <li data-label="column-1">
+            <div class="row" data-handle>
+              <div
+                class="col-12 col-md-12 col-lg-12 col-xl-12"
+                data-handle
+              ></div>
+            </div>
+          </li>
+          <li data-label="column-2">
+            <div class="row" data-handle>
+              <div class="col-12 col-md-6 col-lg-6 col-xl-6" data-handle></div>
+              <div class="col-12 col-md-6 col-lg-6 col-xl-6" data-handle></div>
+            </div>
+          </li>
+          <li data-label="column-3">
+            <div class="row" data-handle>
+              <div class="col-12 col-md-4 col-lg-4 col-xl-4" data-handle></div>
+              <div class="col-12 col-md-4 col-lg-4 col-xl-4" data-handle></div>
+              <div class="col-12 col-md-4 col-lg-4 col-xl-4" data-handle></div>
+            </div>
+          </li>
+          <li data-label="column-4">
+            <div class="row" data-handle>
+              <div
+                class="col-md-6 col-sm-6 col-lg-6 col-xl-3"
+                data-handle
+              ></div>
+              <div
+                class="col-md-6 col-sm-6 col-lg-6 col-xl-3"
+                data-handle
+              ></div>
+              <div
+                class="col-md-6 col-sm-6 col-lg-6 col-xl-3"
+                data-handle
+              ></div>
+              <div
+                class="col-md-6 col-sm-6 col-lg-6 col-xl-3"
+                data-handle
+              ></div>
+            </div>
+          </li>
+          <li data-label="column-60/40">
+            <div class="row" data-handle>
+              <div class="col-12 col-md-6 col-lg-8 col-xl-8" data-handle></div>
+              <div class="col-12 col-md-6 col-lg-4 col-xl-4" data-handle></div>
+            </div>
+          </li>
+          <li data-label="column-40/60">
+            <div class="row" data-handle>
+              <div class="col-12 col-md-6 col-lg-4 col-xl-4" data-handle></div>
+              <div class="col-12 col-md-6 col-lg-8 col-xl-8" data-handle></div>
+            </div>
+          </li>
+          <li data-label="top-card">
+            <div class="dash-widget" data-handle></div>
+          </li>
+          <li data-label="medicos-thumbnail">
+            <span class="dash-widget-bg1"
+              ><i class="fa fa-stethoscope"></i
+            ></span>
+          </li>
+          <li data-label="pacientes-thumbnail">
+            <span class="dash-widget-bg2"><i class="fa fa-user-o"></i></span>
+          </li>
+          <li data-label="atendidos-thumbnail">
+            <span class="dash-widget-bg3"><i class="fa fa-user-md"></i></span>
+          </li>
+          <li data-label="pendientes-thumbnail">
+            <span class="dash-widget-bg4"
+              ><i class="fa fa-heartbeat" aria-hidden="true"></i
+            ></span>
+          </li>
+
+          <li data-label="medicos-title">
+            <div class="dash-widget-info text-right">
+              <h3>98</h3>
+              <span class="widget-title1"
+                >Médicos <i class="fa fa-check" aria-hidden="true"></i
+              ></span>
+            </div>
+          </li>
+
+          <li data-label="pacientes-title">
+            <div class="dash-widget-info text-right">
+              <h3>1072</h3>
+              <span class="widget-title2"
+                >Pacientes <i class="fa fa-check" aria-hidden="true"></i
+              ></span>
+            </div>
+          </li>
+
+          <li data-label="atendidos-title">
+            <div class="dash-widget-info text-right">
+              <h3>72</h3>
+              <span class="widget-title3"
+                >Atendidos <i class="fa fa-check" aria-hidden="true"></i
+              ></span>
+            </div>
+          </li>
+
+          <li data-label="pendientes-title">
+            <div class="dash-widget-info text-right">
+              <h3>618</h3>
+              <span class="widget-title4"
+                >Pendientes <i class="fa fa-check" aria-hidden="true"></i
+              ></span>
+            </div>
+          </li>
+          <!-- <li data-label="medicios-top">
+            <div class="dash-widget" data-handle>
+              <span class="dash-widget-bg1"
+                ><i class="fa fa-stethoscope" aria-hidden="true"></i
+              ></span>
+              <div class="dash-widget-info text-right">
+                <h3>98</h3>
+                <span class="widget-title1"
+                  >Médicos <i class="fa fa-check" aria-hidden="true"></i
+                ></span>
+              </div>
+            </div>
+          </li>
+
+          <li data-label="pacientes-top">
+            <div class="dash-widget" data-handle>
+              <span class="dash-widget-bg2"><i class="fa fa-user-o"></i></span>
+              <div class="dash-widget-info text-right">
+                <h3>1072</h3>
+                <span class="widget-title2"
+                  >Pacientes <i class="fa fa-check" aria-hidden="true"></i
+                ></span>
+              </div>
+            </div>
+          </li>
+
+          <li data-label="atendidos-top">
+            <div class="dash-widget" data-handle>
+              <span class="dash-widget-bg3"
+                ><i class="fa fa-user-md" aria-hidden="true"></i
+              ></span>
+              <div class="dash-widget-info text-right">
+                <h3>72</h3>
+                <span class="widget-title3"
+                  >Atendidos <i class="fa fa-check" aria-hidden="true"></i
+                ></span>
+              </div>
+            </div>
+          </li>
+
+          <li data-label="pendientes-top">
+            <div class="dash-widget">
+              <span class="dash-widget-bg4"
+                ><i class="fa fa-heartbeat" aria-hidden="true"></i
+              ></span>
+              <div class="dash-widget-info text-right">
+                <h3>618</h3>
+                <span class="widget-title4"
+                  >Pendientes <i class="fa fa-check" aria-hidden="true"></i
+                ></span>
+              </div>
+            </div>
+          </li> -->
+        </ul>
+      </library>
+
+      <div class="page-wrapper">
+        <div class="content">
+          <div class="canvas" data-handle></div>
+
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+              <div class="dash-widget">
+                <span class="dash-widget-bg1"
+                  ><i class="fa fa-stethoscope" aria-hidden="true"></i
+                ></span>
+                <div class="dash-widget-info text-right">
+                  <h3>98</h3>
+                  <span class="widget-title1"
+                    >Médicos <i class="fa fa-check" aria-hidden="true"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+              <div class="dash-widget">
+                <span class="dash-widget-bg2"
+                  ><i class="fa fa-user-o"></i
+                ></span>
+                <div class="dash-widget-info text-right">
+                  <h3>1072</h3>
+                  <span class="widget-title2"
+                    >Pacientes <i class="fa fa-check" aria-hidden="true"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+              <div class="dash-widget">
+                <span class="dash-widget-bg3"
+                  ><i class="fa fa-user-md" aria-hidden="true"></i
+                ></span>
+                <div class="dash-widget-info text-right">
+                  <h3>72</h3>
+                  <span class="widget-title3"
+                    >Atendidos <i class="fa fa-check" aria-hidden="true"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+              <div class="dash-widget">
+                <span class="dash-widget-bg4"
+                  ><i class="fa fa-heartbeat" aria-hidden="true"></i
+                ></span>
+                <div class="dash-widget-info text-right">
+                  <h3>618</h3>
+                  <span class="widget-title4"
+                    >Pendientes <i class="fa fa-check" aria-hidden="true"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="chart-title">
+                    <h4>Total de Pacientes</h4>
+                    <span class="float-right"
+                      ><i class="fa fa-caret-up" aria-hidden="true"></i> 15% Más
+                      que el Mes Pasado</span
+                    >
+                  </div>
+                  <canvas id="linegraph"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="chart-title">
+                    <h4>Pacientes en</h4>
+                    <div class="float-right">
+                      <ul class="chat-user-total">
+                        <li>
+                          <i
+                            class="fa fa-circle current-users"
+                            aria-hidden="true"
+                          ></i
+                          >Online
+                        </li>
+                        <li>
+                          <i
+                            class="fa fa-circle old-users"
+                            aria-hidden="true"
+                          ></i>
+                          Consulta Externa
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <canvas id="bargraph"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title d-inline-block">Nuevos Pacientes</h4>
+                  <div class="input-group float-right" style="width: 200px">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Buscar"
+                    />
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-block">
+                  <div class="table-responsive">
+                    <table class="table mb-0 new-patient-table">
+                      <!-- <thead>
+                        <tr>
+                          <th>PACIENTE</th>
+                          <th>SITUACION DEL PACIENTE</th>
+                          <th>ULTIMA ACTUALIZACIÓN DE DATOS</th>
+                          <th class="text-right">ULTIMA HOJA DE IDONEIDAD</th>
+                          <th class="text-right">View</th>
+                        </tr>
+                      </thead> -->
+                      <tbody>
+                        <tr>
+                          <td>
+                            <img
+                              width="28"
+                              height="28"
+                              class="rounded-circle"
+                              src="assets/img/user.jpg"
+                              alt=""
+                            />
+                            <h2>John Doe</h2>
+                          </td>
+                          <td>7/11/23</td>
+                          <td>
+                            <h5 class="time-title p-0">8:48 PM</h5>
+                            <p>25/2/21</p>
+                          </td>
+                          <td class="text-right">
+                            <a href="#" class="btn btn-outline-primary take-btn"
+                              >Nueva Hoja de Idoneidad</a
+                            >
+                          </td>
+                          <td>
+                            <a
+                              href="#"
+                              class="btn btn-primary text-white float-right"
+                            >
+                              Ver Ficha
+                              <i class="fa fa-arrow-right ml-2"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              width="28"
+                              height="28"
+                              class="rounded-circle"
+                              src="assets/img/user.jpg"
+                              alt=""
+                            />
+                            <h2>Richard</h2>
+                          </td>
+                          <td>15/10/23</td>
+                          <td>
+                            <h5 class="time-title p-0">17:21 PM</h5>
+                            <p>7/7/22</p>
+                          </td>
+                          <td class="text-right">
+                            <a href="#" class="btn btn-outline-primary take-btn"
+                              >Nueva Hoja de Idoneidad</a
+                            >
+                          </td>
+                          <td>
+                            <a
+                              href="#"
+                              class="btn btn-primary text-white float-right"
+                            >
+                              Ver Ficha
+                              <i class="fa fa-arrow-right ml-2"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              width="28"
+                              height="28"
+                              class="rounded-circle"
+                              src="assets/img/user.jpg"
+                              alt=""
+                            />
+                            <h2>Villiam</h2>
+                          </td>
+                          <td>29/10/23</td>
+                          <td class="time-container">
+                            <!-- <i class="fa fa-calendar"></i> -->
+                            <div class="time-main">
+                              <h5 class="time-title p-0">17:10 PM</h5>
+                              <p>13/6/19</p>
+                            </div>
+                          </td>
+                          <td class="text-right">
+                            <a href="#" class="btn btn-outline-primary take-btn"
+                              >Nueva Hoja de Idoneidad</a
+                            >
+                          </td>
+                          <td>
+                            <a
+                              href="#"
+                              class="btn btn-primary text-white float-right"
+                            >
+                              Ver Ficha
+                              <i class="fa fa-arrow-right ml-2"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              width="28"
+                              height="28"
+                              class="rounded-circle"
+                              src="assets/img/user.jpg"
+                              alt=""
+                            />
+                            <h2>Martin</h2>
+                          </td>
+                          <td>11/5/20</td>
+                          <td>
+                            <h5 class="time-title p-0">17:31 PM</h5>
+                            <p>28/5/21</p>
+                          </td>
+                          <td class="text-right">
+                            <a href="#" class="btn btn-outline-primary take-btn"
+                              >Nueva Hoja de Idoneidad</a
+                            >
+                          </td>
+                          <td>
+                            <a
+                              href="#"
+                              class="btn btn-primary text-white float-right"
+                            >
+                              Ver Ficha
+                              <i class="fa fa-arrow-right ml-2"></i>
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-8 col-xl-8">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title d-inline-block">Comunicaciones</h4>
+
+                  <a
+                    href="#"
+                    class="btn btn-primary float-right"
+                    style="margin-top: 2px"
+                    >Ver todas</a
+                  >
+                  <div
+                    class="input-group chat-search float-right"
+                    style="width: 400px; margin-right: 10px"
+                  >
+                    <input
+                      type="text"
+                      class="form-control typeahead-2"
+                      placeholder="Iniciar concersation sobre paciente"
+                      id="search-input-chat"
+                    />
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <div class="chat-module-container">
+                    <div
+                      class="chat-container"
+                      data-toggle="collapse"
+                      href="#chatToggle"
+                      aria-expanded="false"
+                      aria-controls="chatToggle"
+                    >
+                      <div class="chat-info">
+                        <div class="chat-text-container">
+                          <div class="avatar-chat">
+                            <span class="avatar"
+                              ><i class="fa fa-user"></i
+                            ></span>
+                          </div>
+                          <div class="chat-text">
+                            <div class="chat-label">
+                              <span class="conversation-label"
+                                ><b>Conversation General</b></span
+                              >
+                            </div>
+                            <div class="chat-text">
+                              <span class="short-text">
+                                <b class="conversation-time mr-1"
+                                  ><i class="fa fa-arrow-left mr-1"></i>
+                                  14:41 </b
+                                >El paciente tiene dolor en la cabeza.</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="chat-day">
+                          <span class="day">Thursday</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="collapse" class="chat-toggle" id="chatToggle">
+                      <div class="card card-body chat-open-body">
+                        <div class="chat-main-wrapper">
+                          <div class="col-lg-9 message-view chat-view">
+                            <div class="chat-window">
+                              <div class="chat-contents">
+                                <div class="chat-content-wrap">
+                                  <div class="chat-wrap-inner">
+                                    <div class="chat-box">
+                                      <div class="chats">
+                                        <div class="chat chat-right">
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>
+                                                  Hello. What can I do for you?
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:30 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-line">
+                                          <span class="chat-date"
+                                            >October 8th, 2023</span
+                                          >
+                                        </div>
+                                        <div class="chat chat-left">
+                                          <div class="chat-avatar">
+                                            <a
+                                              href="profile.html"
+                                              class="avatar"
+                                            >
+                                              <img
+                                                alt="Jennifer Robinson"
+                                                src="assets/img/patient-thumb-02.jpg"
+                                                class="img-fluid rounded-circle"
+                                              />
+                                            </a>
+                                          </div>
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>I'm just looking around.</p>
+                                                <p>
+                                                  Will you tell me something
+                                                  about yourself?
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:35 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>Are you there? That time!</p>
+                                                <span class="chat-time"
+                                                  >8:40 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat chat-right">
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>Where?</p>
+                                                <span class="chat-time"
+                                                  >8:35 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>
+                                                  OK, my name is Limingqiang. I
+                                                  like singing, playing
+                                                  basketballand so on.
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:42 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat chat-left">
+                                          <div class="chat-avatar">
+                                            <a
+                                              href="profile.html"
+                                              class="avatar"
+                                            >
+                                              <img
+                                                alt="Jennifer Robinson"
+                                                src="assets/img/patient-thumb-02.jpg"
+                                                class="img-fluid rounded-circle"
+                                              />
+                                            </a>
+                                          </div>
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>You wait for notice.</p>
+                                                <span class="chat-time"
+                                                  >8:30 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>
+                                                  Consectetuorem ipsum dolor
+                                                  sit?
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:50 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>OK?</p>
+                                                <span class="chat-time"
+                                                  >8:55 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat chat-right">
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>OK!</p>
+                                                <span class="chat-time"
+                                                  >9:00 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="chat chat-left">
+                                          <div class="chat-avatar">
+                                            <a
+                                              href="profile.html"
+                                              class="avatar"
+                                            >
+                                              <img
+                                                alt="Jennifer Robinson"
+                                                src="assets/img/patient-thumb-02.jpg"
+                                                class="img-fluid rounded-circle"
+                                              />
+                                            </a>
+                                          </div>
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>Typing ...</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="chat-footer">
+                                <div class="message-bar">
+                                  <div class="message-inner">
+                                    <a
+                                      class="link attach-icon"
+                                      href="#"
+                                      data-toggle="modal"
+                                      data-target="#drag_files"
+                                      ><img
+                                        src="assets/img/attachment.png"
+                                        alt=""
+                                    /></a>
+                                    <div class="message-area">
+                                      <div class="input-group">
+                                        <textarea
+                                          class="form-control"
+                                          placeholder="Type message..."
+                                        ></textarea>
+                                        <span class="input-group-append">
+                                          <button
+                                            class="btn btn-primary"
+                                            type="button"
+                                          >
+                                            <i class="fa fa-send"></i>
+                                          </button>
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat-module-container">
+                    <div
+                      class="chat-container"
+                      data-toggle="collapse"
+                      href="#chatToggle1"
+                      aria-expanded="false"
+                      aria-controls="chatToggle1"
+                    >
+                      <div class="chat-info">
+                        <div class="chat-text-container">
+                          <div class="avatar-chat">
+                            <span class="avatar"
+                              ><i class="fa fa-user"></i
+                            ></span>
+                          </div>
+                          <div class="chat-text-main">
+                            <div class="chat-label">
+                              <span class="conversation-label"
+                                ><b>Conversation paciente:</b
+                                ><a class="conversation-link" href="#"
+                                  >Bernardo Galavis - 34</a
+                                ></span
+                              >
+                            </div>
+                            <div class="chat-text">
+                              <span class="short-text">
+                                <b class="conversation-time mr-1"
+                                  ><i class="fa fa-arrow-right mr-1"></i>
+                                  14:41 </b
+                                >El paciente tiene dolor en la cabeza.</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="chat-day">
+                          <span class="day">Thursday</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="collapse" class="chat-toggle" id="chatToggle1">
+                      <div class="card card-body chat-open-body">
+                        <div class="chat-main-wrapper">
+                          <div class="col-lg-9 message-view chat-view">
+                            <div class="chat-window">
+                              <div class="chat-contents">
+                                <div class="chat-content-wrap">
+                                  <div class="chat-wrap-inner">
+                                    <div class="chat-box">
+                                      <div class="chats">
+                                        <div class="chat chat-right">
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>
+                                                  Hello. What can I do for you?
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:30 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-line">
+                                          <span class="chat-date"
+                                            >October 8th, 2023</span
+                                          >
+                                        </div>
+                                        <div class="chat chat-left">
+                                          <div class="chat-avatar">
+                                            <a
+                                              href="profile.html"
+                                              class="avatar"
+                                            >
+                                              <img
+                                                alt="Jennifer Robinson"
+                                                src="assets/img/patient-thumb-02.jpg"
+                                                class="img-fluid rounded-circle"
+                                              />
+                                            </a>
+                                          </div>
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>I'm just looking around.</p>
+                                                <p>
+                                                  Will you tell me something
+                                                  about yourself?
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:35 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>Are you there? That time!</p>
+                                                <span class="chat-time"
+                                                  >8:40 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat chat-right">
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>Where?</p>
+                                                <span class="chat-time"
+                                                  >8:35 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>
+                                                  OK, my name is Limingqiang. I
+                                                  like singing, playing
+                                                  basketballand so on.
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:42 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat chat-left">
+                                          <div class="chat-avatar">
+                                            <a
+                                              href="profile.html"
+                                              class="avatar"
+                                            >
+                                              <img
+                                                alt="Jennifer Robinson"
+                                                src="assets/img/patient-thumb-02.jpg"
+                                                class="img-fluid rounded-circle"
+                                              />
+                                            </a>
+                                          </div>
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>You wait for notice.</p>
+                                                <span class="chat-time"
+                                                  >8:30 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>
+                                                  Consectetuorem ipsum dolor
+                                                  sit?
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:50 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>OK?</p>
+                                                <span class="chat-time"
+                                                  >8:55 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat chat-right">
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>OK!</p>
+                                                <span class="chat-time"
+                                                  >9:00 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="chat chat-left">
+                                          <div class="chat-avatar">
+                                            <a
+                                              href="profile.html"
+                                              class="avatar"
+                                            >
+                                              <img
+                                                alt="Jennifer Robinson"
+                                                src="assets/img/patient-thumb-02.jpg"
+                                                class="img-fluid rounded-circle"
+                                              />
+                                            </a>
+                                          </div>
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>Typing ...</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="chat-footer">
+                                <div class="message-bar">
+                                  <div class="message-inner">
+                                    <a
+                                      class="link attach-icon"
+                                      href="#"
+                                      data-toggle="modal"
+                                      data-target="#drag_files"
+                                      ><img
+                                        src="assets/img/attachment.png"
+                                        alt=""
+                                    /></a>
+                                    <div class="message-area">
+                                      <div class="input-group">
+                                        <textarea
+                                          class="form-control"
+                                          placeholder="Type message..."
+                                        ></textarea>
+                                        <span class="input-group-append">
+                                          <button
+                                            class="btn btn-primary"
+                                            type="button"
+                                          >
+                                            <i class="fa fa-send"></i>
+                                          </button>
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat-module-container">
+                    <div
+                      class="chat-container"
+                      data-toggle="collapse"
+                      href="#chatToggle2"
+                      aria-expanded="false"
+                      aria-controls="chatToggle1"
+                    >
+                      <div class="chat-info">
+                        <div class="chat-text-container">
+                          <div class="avatar-chat">
+                            <span class="avatar"
+                              ><i class="fa fa-user"></i
+                            ></span>
+                          </div>
+                          <div class="chat-text-main">
+                            <div class="chat-label">
+                              <span class="conversation-label"
+                                ><b>Conversation paciente:</b
+                                ><a class="conversation-link" href="#"
+                                  >Bernardo Galavis - 34</a
+                                ></span
+                              >
+                            </div>
+                            <div class="chat-text">
+                              <span class="short-text">
+                                <b class="conversation-time mr-1"
+                                  ><i class="fa fa-arrow-right mr-1"></i>
+                                  14:41 </b
+                                >El paciente tiene dolor en la cabeza.</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="chat-day">
+                          <span class="day">Thursday</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="collapse" class="chat-toggle" id="chatToggle2">
+                      <div class="card card-body chat-open-body">
+                        <div class="chat-main-wrapper">
+                          <div class="col-lg-9 message-view chat-view">
+                            <div class="chat-window">
+                              <div class="chat-contents">
+                                <div class="chat-content-wrap">
+                                  <div class="chat-wrap-inner">
+                                    <div class="chat-box">
+                                      <div class="chats">
+                                        <div class="chat chat-right">
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>
+                                                  Hello. What can I do for you?
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:30 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-line">
+                                          <span class="chat-date"
+                                            >October 8th, 2023</span
+                                          >
+                                        </div>
+                                        <div class="chat chat-left">
+                                          <div class="chat-avatar">
+                                            <a
+                                              href="profile.html"
+                                              class="avatar"
+                                            >
+                                              <img
+                                                alt="Jennifer Robinson"
+                                                src="assets/img/patient-thumb-02.jpg"
+                                                class="img-fluid rounded-circle"
+                                              />
+                                            </a>
+                                          </div>
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>I'm just looking around.</p>
+                                                <p>
+                                                  Will you tell me something
+                                                  about yourself?
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:35 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>Are you there? That time!</p>
+                                                <span class="chat-time"
+                                                  >8:40 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat chat-right">
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>Where?</p>
+                                                <span class="chat-time"
+                                                  >8:35 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>
+                                                  OK, my name is Limingqiang. I
+                                                  like singing, playing
+                                                  basketballand so on.
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:42 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat chat-left">
+                                          <div class="chat-avatar">
+                                            <a
+                                              href="profile.html"
+                                              class="avatar"
+                                            >
+                                              <img
+                                                alt="Jennifer Robinson"
+                                                src="assets/img/patient-thumb-02.jpg"
+                                                class="img-fluid rounded-circle"
+                                              />
+                                            </a>
+                                          </div>
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>You wait for notice.</p>
+                                                <span class="chat-time"
+                                                  >8:30 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>
+                                                  Consectetuorem ipsum dolor
+                                                  sit?
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:50 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>OK?</p>
+                                                <span class="chat-time"
+                                                  >8:55 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat chat-right">
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>OK!</p>
+                                                <span class="chat-time"
+                                                  >9:00 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="chat chat-left">
+                                          <div class="chat-avatar">
+                                            <a
+                                              href="profile.html"
+                                              class="avatar"
+                                            >
+                                              <img
+                                                alt="Jennifer Robinson"
+                                                src="assets/img/patient-thumb-02.jpg"
+                                                class="img-fluid rounded-circle"
+                                              />
+                                            </a>
+                                          </div>
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>Typing ...</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="chat-footer">
+                                <div class="message-bar">
+                                  <div class="message-inner">
+                                    <a
+                                      class="link attach-icon"
+                                      href="#"
+                                      data-toggle="modal"
+                                      data-target="#drag_files"
+                                      ><img
+                                        src="assets/img/attachment.png"
+                                        alt=""
+                                    /></a>
+                                    <div class="message-area">
+                                      <div class="input-group">
+                                        <textarea
+                                          class="form-control"
+                                          placeholder="Type message..."
+                                        ></textarea>
+                                        <span class="input-group-append">
+                                          <button
+                                            class="btn btn-primary"
+                                            type="button"
+                                          >
+                                            <i class="fa fa-send"></i>
+                                          </button>
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat-module-container">
+                    <div
+                      class="chat-container"
+                      data-toggle="collapse"
+                      href="#chatToggle3"
+                      aria-expanded="false"
+                      aria-controls="chatToggle1"
+                    >
+                      <div class="chat-info">
+                        <div class="chat-text-container">
+                          <div class="avatar-chat">
+                            <span class="avatar"
+                              ><i class="fa fa-user"></i
+                            ></span>
+                          </div>
+                          <div class="chat-text-main">
+                            <div class="chat-label">
+                              <span class="conversation-label"
+                                ><b>Conversation paciente:</b
+                                ><a class="conversation-link" href="#"
+                                  >Bernardo Galavis - 34</a
+                                ></span
+                              >
+                            </div>
+                            <div class="chat-text">
+                              <span class="short-text">
+                                <b class="conversation-time mr-1"
+                                  ><i class="fa fa-arrow-right mr-1"></i>
+                                  14:41 </b
+                                >El paciente tiene dolor en la cabeza.</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="chat-day">
+                          <span class="day">Thursday</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="collapse" class="chat-toggle" id="chatToggle3">
+                      <div class="card card-body chat-open-body">
+                        <div class="chat-main-wrapper">
+                          <div class="col-lg-9 message-view chat-view">
+                            <div class="chat-window">
+                              <div class="chat-contents">
+                                <div class="chat-content-wrap">
+                                  <div class="chat-wrap-inner">
+                                    <div class="chat-box">
+                                      <div class="chats">
+                                        <div class="chat chat-right">
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>
+                                                  Hello. What can I do for you?
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:30 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-line">
+                                          <span class="chat-date"
+                                            >October 8th, 2023</span
+                                          >
+                                        </div>
+                                        <div class="chat chat-left">
+                                          <div class="chat-avatar">
+                                            <a
+                                              href="profile.html"
+                                              class="avatar"
+                                            >
+                                              <img
+                                                alt="Jennifer Robinson"
+                                                src="assets/img/patient-thumb-02.jpg"
+                                                class="img-fluid rounded-circle"
+                                              />
+                                            </a>
+                                          </div>
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>I'm just looking around.</p>
+                                                <p>
+                                                  Will you tell me something
+                                                  about yourself?
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:35 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>Are you there? That time!</p>
+                                                <span class="chat-time"
+                                                  >8:40 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat chat-right">
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>Where?</p>
+                                                <span class="chat-time"
+                                                  >8:35 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>
+                                                  OK, my name is Limingqiang. I
+                                                  like singing, playing
+                                                  basketballand so on.
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:42 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat chat-left">
+                                          <div class="chat-avatar">
+                                            <a
+                                              href="profile.html"
+                                              class="avatar"
+                                            >
+                                              <img
+                                                alt="Jennifer Robinson"
+                                                src="assets/img/patient-thumb-02.jpg"
+                                                class="img-fluid rounded-circle"
+                                              />
+                                            </a>
+                                          </div>
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>You wait for notice.</p>
+                                                <span class="chat-time"
+                                                  >8:30 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>
+                                                  Consectetuorem ipsum dolor
+                                                  sit?
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:50 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>OK?</p>
+                                                <span class="chat-time"
+                                                  >8:55 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat chat-right">
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>OK!</p>
+                                                <span class="chat-time"
+                                                  >9:00 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="chat chat-left">
+                                          <div class="chat-avatar">
+                                            <a
+                                              href="profile.html"
+                                              class="avatar"
+                                            >
+                                              <img
+                                                alt="Jennifer Robinson"
+                                                src="assets/img/patient-thumb-02.jpg"
+                                                class="img-fluid rounded-circle"
+                                              />
+                                            </a>
+                                          </div>
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>Typing ...</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="chat-footer">
+                                <div class="message-bar">
+                                  <div class="message-inner">
+                                    <a
+                                      class="link attach-icon"
+                                      href="#"
+                                      data-toggle="modal"
+                                      data-target="#drag_files"
+                                      ><img
+                                        src="assets/img/attachment.png"
+                                        alt=""
+                                    /></a>
+                                    <div class="message-area">
+                                      <div class="input-group">
+                                        <textarea
+                                          class="form-control"
+                                          placeholder="Type message..."
+                                        ></textarea>
+                                        <span class="input-group-append">
+                                          <button
+                                            class="btn btn-primary"
+                                            type="button"
+                                          >
+                                            <i class="fa fa-send"></i>
+                                          </button>
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat-module-container">
+                    <div
+                      class="chat-container"
+                      data-toggle="collapse"
+                      href="#chatToggle4"
+                      aria-expanded="false"
+                      aria-controls="chatToggle1"
+                    >
+                      <div class="chat-info">
+                        <div class="chat-text-container">
+                          <div class="avatar-chat">
+                            <span class="avatar"
+                              ><i class="fa fa-user"></i
+                            ></span>
+                          </div>
+                          <div class="chat-text-main">
+                            <div class="chat-label">
+                              <span class="conversation-label"
+                                ><b>Conversation paciente:</b
+                                ><a class="conversation-link" href="#"
+                                  >Bernardo Galavis - 34</a
+                                ></span
+                              >
+                            </div>
+                            <div class="chat-text">
+                              <span class="short-text">
+                                <b class="conversation-time mr-1"
+                                  ><i class="fa fa-arrow-right mr-1"></i>
+                                  14:41 </b
+                                >El paciente tiene dolor en la cabeza.</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="chat-day">
+                          <span class="day">Thursday</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="collapse" class="chat-toggle" id="chatToggle4">
+                      <div class="card card-body chat-open-body">
+                        <div class="chat-main-wrapper">
+                          <div class="col-lg-9 message-view chat-view">
+                            <div class="chat-window">
+                              <div class="chat-contents">
+                                <div class="chat-content-wrap">
+                                  <div class="chat-wrap-inner">
+                                    <div class="chat-box">
+                                      <div class="chats">
+                                        <div class="chat chat-right">
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>
+                                                  Hello. What can I do for you?
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:30 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-line">
+                                          <span class="chat-date"
+                                            >October 8th, 2023</span
+                                          >
+                                        </div>
+                                        <div class="chat chat-left">
+                                          <div class="chat-avatar">
+                                            <a
+                                              href="profile.html"
+                                              class="avatar"
+                                            >
+                                              <img
+                                                alt="Jennifer Robinson"
+                                                src="assets/img/patient-thumb-02.jpg"
+                                                class="img-fluid rounded-circle"
+                                              />
+                                            </a>
+                                          </div>
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>I'm just looking around.</p>
+                                                <p>
+                                                  Will you tell me something
+                                                  about yourself?
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:35 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>Are you there? That time!</p>
+                                                <span class="chat-time"
+                                                  >8:40 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat chat-right">
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>Where?</p>
+                                                <span class="chat-time"
+                                                  >8:35 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>
+                                                  OK, my name is Limingqiang. I
+                                                  like singing, playing
+                                                  basketballand so on.
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:42 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat chat-left">
+                                          <div class="chat-avatar">
+                                            <a
+                                              href="profile.html"
+                                              class="avatar"
+                                            >
+                                              <img
+                                                alt="Jennifer Robinson"
+                                                src="assets/img/patient-thumb-02.jpg"
+                                                class="img-fluid rounded-circle"
+                                              />
+                                            </a>
+                                          </div>
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>You wait for notice.</p>
+                                                <span class="chat-time"
+                                                  >8:30 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>
+                                                  Consectetuorem ipsum dolor
+                                                  sit?
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:50 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>OK?</p>
+                                                <span class="chat-time"
+                                                  >8:55 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat chat-right">
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>OK!</p>
+                                                <span class="chat-time"
+                                                  >9:00 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="chat chat-left">
+                                          <div class="chat-avatar">
+                                            <a
+                                              href="profile.html"
+                                              class="avatar"
+                                            >
+                                              <img
+                                                alt="Jennifer Robinson"
+                                                src="assets/img/patient-thumb-02.jpg"
+                                                class="img-fluid rounded-circle"
+                                              />
+                                            </a>
+                                          </div>
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>Typing ...</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="chat-footer">
+                                <div class="message-bar">
+                                  <div class="message-inner">
+                                    <a
+                                      class="link attach-icon"
+                                      href="#"
+                                      data-toggle="modal"
+                                      data-target="#drag_files"
+                                      ><img
+                                        src="assets/img/attachment.png"
+                                        alt=""
+                                    /></a>
+                                    <div class="message-area">
+                                      <div class="input-group">
+                                        <textarea
+                                          class="form-control"
+                                          placeholder="Type message..."
+                                        ></textarea>
+                                        <span class="input-group-append">
+                                          <button
+                                            class="btn btn-primary"
+                                            type="button"
+                                          >
+                                            <i class="fa fa-send"></i>
+                                          </button>
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="chat-module-container"
+                    style="padding-bottom: 0.75rem"
+                  >
+                    <div
+                      class="chat-container"
+                      data-toggle="collapse"
+                      href="#chatToggle5"
+                      aria-expanded="false"
+                      aria-controls="chatToggle1"
+                    >
+                      <div class="chat-info">
+                        <div class="chat-text-container">
+                          <div class="avatar-chat">
+                            <span class="avatar"
+                              ><i class="fa fa-user"></i
+                            ></span>
+                          </div>
+                          <div class="chat-text-main">
+                            <div class="chat-label">
+                              <span class="conversation-label"
+                                ><b>Conversation paciente:</b
+                                ><a class="conversation-link" href="#"
+                                  >Bernardo Galavis - 34</a
+                                ></span
+                              >
+                            </div>
+                            <div class="chat-text">
+                              <span class="short-text">
+                                <b class="conversation-time mr-1"
+                                  ><i class="fa fa-arrow-right mr-1"></i>
+                                  14:41 </b
+                                >El paciente tiene dolor en la cabeza.</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="chat-day">
+                          <span class="day">Thursday</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="collapse" class="chat-toggle" id="chatToggle5">
+                      <div class="card card-body chat-open-body">
+                        <div class="chat-main-wrapper">
+                          <div class="col-lg-9 message-view chat-view">
+                            <div class="chat-window">
+                              <div class="chat-contents">
+                                <div class="chat-content-wrap">
+                                  <div class="chat-wrap-inner">
+                                    <div class="chat-box">
+                                      <div class="chats">
+                                        <div class="chat chat-right">
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>
+                                                  Hello. What can I do for you?
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:30 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-line">
+                                          <span class="chat-date"
+                                            >October 8th, 2023</span
+                                          >
+                                        </div>
+                                        <div class="chat chat-left">
+                                          <div class="chat-avatar">
+                                            <a
+                                              href="profile.html"
+                                              class="avatar"
+                                            >
+                                              <img
+                                                alt="Jennifer Robinson"
+                                                src="assets/img/patient-thumb-02.jpg"
+                                                class="img-fluid rounded-circle"
+                                              />
+                                            </a>
+                                          </div>
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>I'm just looking around.</p>
+                                                <p>
+                                                  Will you tell me something
+                                                  about yourself?
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:35 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>Are you there? That time!</p>
+                                                <span class="chat-time"
+                                                  >8:40 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat chat-right">
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>Where?</p>
+                                                <span class="chat-time"
+                                                  >8:35 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>
+                                                  OK, my name is Limingqiang. I
+                                                  like singing, playing
+                                                  basketballand so on.
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:42 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat chat-left">
+                                          <div class="chat-avatar">
+                                            <a
+                                              href="profile.html"
+                                              class="avatar"
+                                            >
+                                              <img
+                                                alt="Jennifer Robinson"
+                                                src="assets/img/patient-thumb-02.jpg"
+                                                class="img-fluid rounded-circle"
+                                              />
+                                            </a>
+                                          </div>
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>You wait for notice.</p>
+                                                <span class="chat-time"
+                                                  >8:30 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>
+                                                  Consectetuorem ipsum dolor
+                                                  sit?
+                                                </p>
+                                                <span class="chat-time"
+                                                  >8:50 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>OK?</p>
+                                                <span class="chat-time"
+                                                  >8:55 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat chat-right">
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>OK!</p>
+                                                <span class="chat-time"
+                                                  >9:00 am</span
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="chat chat-left">
+                                          <div class="chat-avatar">
+                                            <a
+                                              href="profile.html"
+                                              class="avatar"
+                                            >
+                                              <img
+                                                alt="Jennifer Robinson"
+                                                src="assets/img/patient-thumb-02.jpg"
+                                                class="img-fluid rounded-circle"
+                                              />
+                                            </a>
+                                          </div>
+                                          <div class="chat-body">
+                                            <div class="chat-bubble">
+                                              <div class="chat-content">
+                                                <p>Typing ...</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="chat-footer">
+                                <div class="message-bar">
+                                  <div class="message-inner">
+                                    <a
+                                      class="link attach-icon"
+                                      href="#"
+                                      data-toggle="modal"
+                                      data-target="#drag_files"
+                                      ><img
+                                        src="assets/img/attachment.png"
+                                        alt=""
+                                    /></a>
+                                    <div class="message-area">
+                                      <div class="input-group">
+                                        <textarea
+                                          class="form-control"
+                                          placeholder="Type message..."
+                                        ></textarea>
+                                        <span class="input-group-append">
+                                          <button
+                                            class="btn btn-primary"
+                                            type="button"
+                                          >
+                                            <i class="fa fa-send"></i>
+                                          </button>
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+              <div class="card member-panel">
+                <!-- <div class="card-header bg-white">
+                  <h4 class="card-title mb-0">Prescripcion Express</h4>
+                </div> -->
+                <div class="card-header bg-white quick-tab">
+                  <ul class="nav nav-tabs" id="myTabs" role="tablist">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        id="tab1"
+                        data-toggle="tab"
+                        href="#content1"
+                        role="tab"
+                        aria-controls="content1"
+                        aria-selected="true"
+                        >Prescripcion Express</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="tab2"
+                        data-toggle="tab"
+                        href="#content2"
+                        role="tab"
+                        aria-controls="content2"
+                        aria-selected="false"
+                        >Materiales Descargables</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-content">
+                  <div
+                    class="tab-pane fade show active"
+                    id="content1"
+                    role="tabpanel"
+                    aria-labelledby="tab1"
+                  >
+                    <!-- Content for Tab 1 goes here -->
+                    <div
+                      class="input-group"
+                      style="width: 100%; padding: 0 15px 15px 15px"
+                    >
+                      <input
+                        type="text"
+                        class="form-control typeahead"
+                        placeholder="buscar un paciente"
+                      />
+                      <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">
+                          <i class="fa fa-search"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="row quick-express">
+                      <div class="col-lg-10 offset-lg-1">
+                        <form>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label
+                                  >Nombre - Apellido
+                                  <span class="text-danger">*</span></label
+                                >
+                                <input
+                                  class="form-control"
+                                  type="text"
+                                  placeholder="Nombre"
+                                />
+                              </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label
+                                  >Telefono
+                                  <span class="text-danger">*</span></label
+                                >
+                                <input
+                                  class="form-control"
+                                  type="text"
+                                  placeholder="número de teléfono"
+                                />
+                              </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                              <div class-form-group="">
+                                <label>Correo </label>
+                                <input
+                                  class="form-control"
+                                  type="text"
+                                  placeholder="correo electrónico"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label
+                                  >Partir de la fecha
+                                  <span class="text-danger">*</span></label
+                                >
+                                <div class="cal-icon">
+                                  <input
+                                    type="text"
+                                    class="form-control datetimepicker"
+                                    placeholder=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label
+                                  >Hasta la fecha
+                                  <span class="text-danger">*</span></label
+                                >
+                                <div class="cal-icon">
+                                  <input
+                                    type="text"
+                                    class="form-control datetimepicker"
+                                    placeholder=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label
+                                  >Seleccionar fase
+                                  <span class="text-danger">*</span></label
+                                >
+                                <select class="select">
+                                  <option value="" disabled selected>
+                                    Fase
+                                  </option>
+                                  <option>Fase 1</option>
+                                  <option>Fase 2</option>
+                                  <option>Fase 3</option>
+                                  <option>Fase 4</option>
+                                  <option>Fase 5</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="form-group">
+                                <label
+                                  >Comentario
+                                  <span class="text-danger">*</span></label
+                                >
+                                <textarea
+                                  class="form-control"
+                                  rows="2"
+                                  placeholder="Comentario"
+                                ></textarea>
+                              </div>
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="form-group text-right">
+                                <button class="btn btn-primary" type="submit">
+                                  Anadir
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="content2"
+                    role="tabpanel"
+                    aria-labelledby="tab2"
+                  >
+                    <div class="col-lg-10 offset-lg-1">
+                      <div class="row pdf-container">
+                        <!-- <div class="col-12">
+                          <h4>PDF Files</h4>
+                        </div> -->
+                        <div class="col-12">
+                          <!-- Row 1 -->
+                          <div class="row">
+                            <div class="col-4">
+                              <p>Fase 1 explicado</p>
+                            </div>
+                            <div class="col-4">
+                              <p>January 1, 2023</p>
+                            </div>
+                            <div class="col-4">
+                              <a
+                                href="/assets/pdf/Fase 1 Progen ES (reducido).pdf"
+                                download
+                                >Descargar</a
+                              >
+                            </div>
+                          </div>
+                          <!-- Row 2 -->
+                          <div class="row">
+                            <div class="col-4">
+                              <p>Fase 2 explicado</p>
+                            </div>
+                            <div class="col-4">
+                              <p>February 15, 2023</p>
+                            </div>
+                            <div class="col-4">
+                              <a
+                                href="/assets/pdf/Fase 2 Progen ES (reducido).pdf"
+                                download
+                                >Descargar</a
+                              >
+                            </div>
+                          </div>
+                          <!-- Row 3 -->
+                          <div class="row">
+                            <div class="col-4">
+                              <p>Fase 3 explicado</p>
+                            </div>
+                            <div class="col-4">
+                              <p>March 22, 2023</p>
+                            </div>
+                            <div class="col-4">
+                              <a
+                                href="/assets/pdf/Fase 3 Progen ES (reducido).pdf"
+                                download
+                                >Descargar</a
+                              >
+                            </div>
+                          </div>
+                          <!-- Row 4 -->
+                          <div class="row">
+                            <div class="col-4">
+                              <p>Fase 4 explicado</p>
+                            </div>
+                            <div class="col-4">
+                              <p>April 8, 2023</p>
+                            </div>
+                            <div class="col-4">
+                              <a
+                                href="/assets/pdf/Fase 4 Progen ES (reducido).pdf"
+                                download
+                                >Descargar</a
+                              >
+                            </div>
+                          </div>
+                          <!-- Row 5 -->
+                          <div class="row">
+                            <div class="col-4">
+                              <p>Fase 5 explicado</p>
+                            </div>
+                            <div class="col-4">
+                              <p>May 17, 2023</p>
+                            </div>
+                            <div class="col-4">
+                              <a
+                                href="/assets/pdf/Fase 5 Progen ES (reducido).pdf"
+                                download
+                                >Descargar</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <div class="card-footer text-center bg-white">
+                  <a href="doctors.html" class="text-muted"
+                    >Ver todos los Médicos</a
+                  >
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Chat Modal -->
+      <div
+        class="modal fade"
+        id="chatModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="chatModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="consultaModalLabel">Quick Reply</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="user-area-container">
+                <div class="user-details mr-auto">
+                  <div class="user-img m-r-10">
+                    <a href="profile.html" title="Jennifer Robinson"
+                      ><img
+                        src="assets/img/patient-thumb-02.jpg"
+                        alt=""
+                        class="w-40 rounded-circle" /><span
+                        class="status online"
+                      ></span
+                    ></a>
+                  </div>
+                  <div class="user-info">
+                    <a href="profile.html"
+                      ><span class="font-bold">Bernardo Galaviz </span>
+                      <i class="typing-text">Away</i></a
+                    >
+                    <span class="last-seen">Last seen today at 7:50 AM</span>
+                  </div>
+                </div>
+              </div>
+              <div class="message-area-container mt-3">
+                <div class="message-area">
+                  <div class="input-group">
+                    <textarea
+                      class="form-control"
+                      placeholder="Type message..."
+                    ></textarea>
+                    <span class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fa fa-send"></i>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Quick Patient Modal -->
+      <!-- <div
+        class="modal fade"
+        id="quickPatient"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="quickPatientModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="content">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h1 class="modal-title">Agregar paciente</h1>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-10 offset-lg-1">
+                    <form>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label
+                              >Nombre - Apellido
+                              <span class="text-danger">*</span></label
+                            >
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Nombre"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label
+                              >Telefono
+                              <span class="text-danger">*</span></label
+                            >
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="número de teléfono"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                          <div class-form-group="">
+                            <label>Correo </label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="correo electrónico"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label
+                              >Partir de la fecha
+                              <span class="text-danger">*</span></label
+                            >
+                            <div class="cal-icon">
+                              <input
+                                type="text"
+                                class="form-control datetimepicker"
+                                placeholder=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label
+                              >Hasta la fecha
+                              <span class="text-danger">*</span></label
+                            >
+                            <div class="cal-icon">
+                              <input
+                                type="text"
+                                class="form-control datetimepicker"
+                                placeholder=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label
+                              >Seleccionar fase
+                              <span class="text-danger">*</span></label
+                            >
+                            <select class="select">
+                              <option value="" disabled selected>Fase</option>
+                              <option>Fase 1</option>
+                              <option>Fase 2</option>
+                              <option>Fase 3</option>
+                              <option>Fase 4</option>
+                              <option>Fase 5</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <div class="sidebar-overlay" data-reff=""></div>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/Chart.bundle.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/pagebuilder.js"></script>
+
+    <!-- Typeahead and Bloodhound -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
+    <!-- Dummy data for Express -->
+    <script>
+      var dummyData = [
+        {
+          firstName: "John",
+          lastName: "Doe",
+          phone: "123-456-7890",
+          city: "New York",
+          date: "22/07/23",
+        },
+        {
+          firstName: "john",
+          lastName: "Smith",
+          phone: "987-654-3210",
+          city: "Los Angeles",
+          date: "22/07/23",
+        },
+        {
+          firstName: "Alice",
+          lastName: "Johnson",
+          phone: "555-123-4567",
+          city: "Chicago",
+          date: "22/07/23",
+        },
+        {
+          firstName: "Bob",
+          lastName: "Williams",
+          phone: "222-333-4444",
+          city: "San Francisco",
+          date: "22/07/23",
+        },
+        {
+          firstName: "Eva",
+          lastName: "Brown",
+          phone: "777-888-9999",
+          city: "Miami",
+          date: "22/07/23",
+        },
+      ];
+
+      // Initialize Bloodhound suggestion engine
+      var bloodhound = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.obj.whitespace(
+          "firstName",
+          "lastName",
+          "phone"
+        ),
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        local: dummyData,
+      });
+
+      // Initialize typeahead
+      $(".typeahead").typeahead(
+        {
+          hint: true,
+          highlight: true,
+          minLength: 1,
+        },
+        {
+          name: "data",
+          source: bloodhound,
+          display: function (item) {
+            return item.firstName + " " + item.lastName;
+          },
+          templates: {
+            suggestion: function (item) {
+              return (
+                "<div>" +
+                item.firstName +
+                " " +
+                item.lastName +
+                " - " +
+                item.phone +
+                ", " +
+                item.city +
+                ", " +
+                item.date +
+                "</div>"
+              );
+            },
+          },
+        }
+      );
+    </script>
+
+    <script>
+      var dataForChat = [
+        {
+          firstName: "Galavis",
+          lastName: "Bernardo",
+          phone: "+34 678 267 198",
+          city: "Barcelona",
+          date: "22/07/23",
+        },
+        {
+          firstName: "john",
+          lastName: "Smith",
+          phone: "987-654-3210",
+          city: "Los Angeles",
+          date: "22/07/23",
+        },
+      ];
+
+      var bloodhound = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.obj.whitespace(
+          "firstName",
+          "lastName",
+          "phone"
+        ),
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        local: dataForChat,
+      });
+
+      // Initialize typeahead
+      $(".typeahead-2").typeahead(
+        {
+          hint: true,
+          highlight: true,
+          minLength: 1,
+        },
+        {
+          name: "data",
+          source: bloodhound,
+          display: function (item) {
+            return item.firstName + " " + item.lastName;
+          },
+          templates: {
+            suggestion: function (item) {
+              return (
+                "<div>" +
+                item.firstName +
+                " " +
+                item.lastName +
+                " - " +
+                item.phone +
+                ", " +
+                item.city +
+                ", " +
+                item.date +
+                "</div>"
+              );
+            },
+          },
+        }
+      );
+    </script>
+  </body>
+</html>
