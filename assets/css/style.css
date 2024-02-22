@@ -5286,6 +5286,11 @@ ul#recentVisitsList button {
   gap: 50px;
 }
 
+.btn-confirm{
+  background-color: #28a745 !important
+}
+
+
 @media screen and (min-width: 768px) {
   .patient-data label {
     width: 150px;
