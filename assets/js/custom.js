@@ -284,3 +284,36 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+
+$(document).ready(function () {
+  // Check if the text in the comment cell exceeds 3 words
+  $(".comment-trigger").each(function () {
+    var commentText = $(this).text().trim();
+    var words = commentText.split(/\s+/); // Split by whitespace
+    if (words.length > 3) {
+      var truncatedText = words.slice(0, 3).join(" ") + "...";
+      $(this).text(truncatedText);
+      $(this).addClass("comment-popup"); // Add class for triggering popup
+      $(this).attr("data-comment", commentText); // Store full comment as data attribute
+    }
+  });
+
+  // Show full comment in a popup when clicked
+  $(document).on("click", ".comment-popup", function () {
+    var comment = $(this).data("comment");
+    $("#commentContent").text(comment);
+    $("#commentModal").modal("show");
+  });
+
+  // Change text color and cursor behavior on hover
+  $(document).on("mouseenter", ".comment-trigger", function () {
+    $(this).css("color", "#007a9a"); // Change text color to blue on hover
+    $(this).css("cursor", "pointer"); // Change cursor to pointer on hover
+  });
+
+  $(document).on("mouseleave", ".comment-trigger", function () {
+    $(this).css("color", ""); // Reset text color on mouse leave
+    $(this).css("cursor", ""); // Reset cursor on mouse leave
+  });
+});
+
