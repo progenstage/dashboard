@@ -38,6 +38,12 @@
       href="assets/css/bootstrap-datetimepicker.min.css"
     />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- Calendar -->
+    <link rel="stylesheet" href="./assets/css/calendar.css" />
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+    />
   </head>
 
   <body>
@@ -367,8 +373,19 @@
             </div>
             <div class="col-12 col-md-6 col-lg-6 col-xl-6">
               <div class="card">
-                <div class="card-body">
-                  <div class="chart-title">
+                <div class="card-body calendar">
+                  <div class="wrapper">
+                    <div id="calendar">
+                      <div id="calendar_header">
+                        <i class="icon-chevron-left"></i>
+                        <h1></h1>
+                        <i class="icon-chevron-right"></i>
+                      </div>
+                      <div id="calendar_weekdays"></div>
+                      <div id="calendar_content"></div>
+                    </div>
+                  </div>
+                  <!-- <div class="chart-title">
                     <h4>Pacientes en</h4>
                     <div class="float-right">
                       <ul class="chat-user-total">
@@ -388,11 +405,14 @@
                         </li>
                       </ul>
                     </div>
-                  </div>
+                  </div> -->
                   <canvas id="bargraph"></canvas>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12"></div>
           </div>
           <div class="row mb-3">
             <div class="col-md-12">
@@ -2775,6 +2795,7 @@
     <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="./assets/js/calendar.js"></script>
 
     <!-- Typeahead and Bloodhound -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
