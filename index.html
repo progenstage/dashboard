@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="./assets/css/calendar.css" />
     <link
       rel="stylesheet"
-      href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      href="https://fullcalendar.io/js/fullcalendar-3.0.0/fullcalendar.css"
     />
   </head>
 
@@ -375,14 +375,91 @@
               <div class="card">
                 <div class="card-body calendar">
                   <div class="wrapper">
-                    <div id="calendar">
-                      <div id="calendar_header">
-                        <i class="icon-chevron-left"></i>
-                        <h1></h1>
-                        <i class="icon-chevron-right"></i>
+                    <div class="calendar-main-container">
+                      <div class="calendar-container">
+                        <div class="toggle-weekend-container">
+                          <button id="toggleWeekends">Show Weekend</button>
+                        </div>
+                        <div id="calendar"></div>
                       </div>
-                      <div id="calendar_weekdays"></div>
-                      <div id="calendar_content"></div>
+
+                      <!-- Bootstrap Modal -->
+                      <div
+                        class="modal fade"
+                        id="calendarModal"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="calendarModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="calendarModalLabel">
+                                Modal title
+                              </h5>
+                              <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <form id="slotForm">
+                                <div class="form-group">
+                                  <label for="duration"
+                                    >Duration (minutes)</label
+                                  >
+                                  <input
+                                    type="number"
+                                    class="form-control"
+                                    id="duration"
+                                    value="20"
+                                    min="20"
+                                    max="60"
+                                    step="20"
+                                  />
+                                </div>
+                                <div class="form-group">
+                                  <label for="patientName">Patient Name</label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="patientName"
+                                  />
+                                </div>
+                                <div class="form-group">
+                                  <label for="status">Status</label>
+                                  <select class="form-control" id="status">
+                                    <option value="upcoming">Upcoming</option>
+                                    <option value="passed">Passed</option>
+                                    <option value="confirmed">Confirmed</option>
+                                  </select>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                id="saveBtn"
+                              >
+                                Save changes
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <!-- <div class="chart-title">
@@ -2796,6 +2873,9 @@
     <script src="assets/js/app.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="./assets/js/calendar.js"></script>
+    <!-- FullCalendar JavaScript -->
+    <script src="https://fullcalendar.io/js/fullcalendar-3.0.0/lib/moment.min.js"></script>
+    <script src="https://fullcalendar.io/js/fullcalendar-3.0.0/fullcalendar.min.js"></script>
 
     <!-- Typeahead and Bloodhound -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
