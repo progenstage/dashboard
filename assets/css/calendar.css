@@ -3,12 +3,16 @@
 }
 
 .toggle-weekend-container button {
-  padding: 10px 35px;
+  padding: 0 0.5em;
   border-radius: 5px;
   outline: 0;
   border: 0;
-  margin: 10px 2.5px;
+  /* margin: 10px 2.5px; */
   cursor: pointer;
+  background-color: #007a9a;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .fc-state-default {
@@ -25,6 +29,39 @@
 
 .fc th.fc-widget-header {
   font-size: 12px;
+}
+
+.fc-icon-left-single-arrow:after,
+.fc-icon-right-single-arrow:after {
+  color: #fff;
+}
+
+.fc-today-button,
+.fc-agendaWeek-button {
+  text-transform: capitalize;
+}
+
+.fc-state-default {
+  border-color: #007a9a;
+  text-shadow: none;
+  background-color: #007a9a !important;
+  color: #fff;
+  background-image: none !important;
+}
+
+.fc .fc-button-group > :first-child {
+  margin-right: 5px;
+}
+
+.fc-view-container {
+  position: relative;
+}
+
+.toggle-weekend-container {
+  position: absolute;
+  top: -5px;
+  right: 15px;
+  z-index: 111;
 }
 
 @media screen and (max-width: 1500px) {
