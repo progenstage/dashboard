@@ -42,10 +42,10 @@
 }
 
 .fc-state-default {
-  border-color: #007a9a;
-  text-shadow: none;
+  border-color: #007a9a !important;
+  text-shadow: none !important;
   background-color: #007a9a !important;
-  color: #fff;
+  color: #fff !important;
   background-image: none !important;
 }
 
