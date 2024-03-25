@@ -63,7 +63,10 @@ $(document).ready(function () {
             $("#calendar").fullCalendar("renderEvent", eventData, true);
           } else {
             // Update existing event
-            var eventToUpdate = $("#calendar").fullCalendar("clientEvents", eventData._id)[0];
+            var eventToUpdate = $("#calendar").fullCalendar(
+              "clientEvents",
+              eventData._id
+            )[0];
             eventToUpdate.start = eventData.start;
             eventToUpdate.end = eventData.end;
             eventToUpdate.title = eventData.title;
@@ -80,8 +83,12 @@ $(document).ready(function () {
       $("#calendarModal").modal("show"); // Open modal for updating details
 
       // Fill modal fields with event data
-      $("#patientName").val(calEvent.title.split('Appointment with ')[1].split(' (')[0]);
-      $("#duration").val(parseInt(calEvent.title.split('Duration: ')[1].split(' minutes')[0]));
+      $("#patientName").val(
+        calEvent.title.split("Appointment with ")[1].split(" (")[0]
+      );
+      $("#duration").val(
+        parseInt(calEvent.title.split("Duration: ")[1].split(" minutes")[0])
+      );
       $("#status").val(calEvent.status);
 
       // Save button click event
@@ -114,7 +121,10 @@ $(document).ready(function () {
             status: status,
           };
 
-          var eventToUpdate = $("#calendar").fullCalendar("clientEvents", eventData._id)[0];
+          var eventToUpdate = $("#calendar").fullCalendar(
+            "clientEvents",
+            eventData._id
+          )[0];
           eventToUpdate.start = eventData.start;
           eventToUpdate.end = eventData.end;
           eventToUpdate.title = eventData.title;
@@ -126,7 +136,8 @@ $(document).ready(function () {
 
       // Add delete button
       $("#deleteBtn").remove();
-      var deleteBtnHtml = '<button type="button" class="btn btn-danger" id="deleteBtn">Delete</button>';
+      var deleteBtnHtml =
+        '<button type="button" class="btn btn-danger" id="deleteBtn">Delete</button>';
       $(".modal-footer").append(deleteBtnHtml);
 
       // Delete button click event
@@ -139,25 +150,25 @@ $(document).ready(function () {
     },
 
     eventRender: function (event, element) {
-      element.find('.fc-title').attr('title', event.title); // Set the full title as tooltip
+      element.find(".fc-title").attr("title", event.title); // Set the full title as tooltip
       if (event.title.length > 20) {
-        element.find('.fc-title').text(event.title.substring(0, 20) + '...'); // Truncate title if it exceeds 20 characters
+        element.find(".fc-title").text(event.title.substring(0, 20) + "..."); // Truncate title if it exceeds 20 characters
       }
       // Update booked slots with respective colors based on status
       switch (event.status) {
-        case 'upcoming':
-          element.css('background-color', 'rgb(122, 229, 130)');
+        case "upcoming":
+          element.css("background-color", "rgb(122, 229, 130)");
           break;
-        case 'passed':
-          element.css('background-color', 'rgb(255, 227, 122)');
+        case "passed":
+          element.css("background-color", "rgb(255, 227, 122)");
           break;
-        case 'confirmed':
-          element.css('background-color', 'rgb(133, 161, 239)');
+        case "confirmed":
+          element.css("background-color", "rgb(133, 161, 239)");
           break;
         default:
-          element.css('background-color', 'green');
+          element.css("background-color", "green");
       }
-    }
+    },
   });
 
   $("#toggleWeekends").click(function () {
@@ -166,6 +177,8 @@ $(document).ready(function () {
       hiddenDays: showWeekends ? [] : [0, 6], // Show or hide weekends based on the updated showWeekends flag
     });
     // Change button text based on showWeekends flag
-    $(this).text(showWeekends ? "Close Weekend" : "Show Weekend");
+    $(this).text(showWeekends ? "<" : ">");
   });
+
+  $(".toggle-weekend-container").appendTo(".fc-view-container");
 });
