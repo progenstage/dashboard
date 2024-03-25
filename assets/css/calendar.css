@@ -58,8 +58,8 @@
 
 .toggle-weekend-container {
   position: absolute;
-  top: -5px;
-  right: 15px;
+  top: 8px;
+  right: 0px;
   z-index: 111;
 }
 
