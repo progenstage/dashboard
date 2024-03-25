@@ -63,6 +63,11 @@
   z-index: 111;
 }
 
+.fc button .fc-icon {
+  top: 0 !important;
+  margin: 0 !important;
+}
+
 @media screen and (max-width: 1500px) {
   .fc-scroller.fc-time-grid-container {
     max-height: 192px !important;
